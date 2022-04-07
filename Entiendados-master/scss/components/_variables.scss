@@ -1,0 +1,68 @@
+//variables
+
+
+
+/* Variables */
+
+
+
+
+//colores principales
+$Principal-color: #8424c4;
+$Color-Fondo: #1c1b1b;
+$navbar-body-color: #151515;
+
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+//Header
+$font-family: 'Roboto',
+sans-serif;
+$font-size-base: 1rem;
+
+$text-dark: #d0d4db;
+$border-color: $Principal-color;
+$base-color: $Principal-color;
+
+$navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$navbar-padding-y: 1rem;
+$navbar-padding-x: 1.15rem;
+
+$navbar-link-hover: $base-color;
+$navbar-link-padding-y: 0.5rem;
+$navbar-link-padding-x: 1rem;
+
+$navbar-dropdown-padding-y: 0.5rem;
+$navbar-dropdown-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+$navbar-dropdown-radius: 0.75rem;
+
+$navbar-dropdown-item-padding-y: 0.25rem;
+$navbar-dropdown-item-padding-x: 1rem;
+
+$navbar-dropdown-separator-margin-y: 9px;
+$navbar-dropdown-separator-color: $border-color;
+
+/////////////////////////////////////////////////////////////////////////////
+
+// color diseño
+$colores-g: rgb(236, 236, 236);
+// color texto-diseño
+$colores-txt: #e6f9af;
+// color diseño 2
+$colores-txt2: #8bbeb2;
+// Color footer/header
+$colores-foothead: #0d0630;
+// color fondo general gris
+$colores-fondo-general: #ececec;
+// color texto negro no tan fuerte
+$colores-txt-black: #3c3a3a;
+
+
+//fuentes
+
+// Montserrat
+$Montserrat: "Montserrat";
+// TiemposFont
+$TiemposFont: "TiemposFont";
+

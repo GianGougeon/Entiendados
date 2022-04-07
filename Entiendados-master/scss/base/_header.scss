@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import "./../components/variables";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+
+header {
+
+  //sombreado
+  border-bottom: 1px solid black;
+  -webkit-box-shadow: 0px 11px 14px -4px #6e6c6c;
+  box-shadow: 1px 3px 7px 3px #0f0f0f;
+  //
+  margin-bottom: 5%;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  //stycky header
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  background-image: none;
+}
+
+
+body {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  background-color: $Color-Fondo;
+  background-image: url('../../src/img-noise-361x370.png');
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-nav {
+  width: 1170px;
+  position: relative;
+  display: flex;
+
+  margin: {
+    left: auto;
+    right: auto;
+  }
+
+  padding: {
+    left: 15px;
+    right: 15px;
+  }
+}
+
+// inicio navbar
+
+.navbar,
+.navbar>.container-nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+  background-color: $navbar-body-color;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.navbar {
+  box-shadow: $navbar-shadow;
+  background-color: $navbar-body-color;
+  height: 97px;
+
+
+
+  .container-nav {
+    @media (min-width: 576px) {}
+
+    @media (min-width: 768px) {
+      max-width: 720px;
+    }
+
+    @media (min-width: 992px) {
+      max-width: 960px;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 1140px;
+    }
+  }
+
+
+  .navbar-header {
+    background-color: $navbar-body-color;
+    background-image: none;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+
+
+
+    .navbar-toggler {
+
+      cursor: pointer;
+      border: none;
+      display: none;
+      outline: none;
+
+      @media (max-width: 768px) {
+        display: block
+      }
+
+      span {
+        height: 2px;
+        width: 22px;
+        background-color: lighten($text-dark, 35%);
+        display: block;
+      }
+
+      span:not(:last-child) {
+        margin-bottom: 0.2rem;
+      }
+    }
+
+    >a {
+      font-weight: 500;
+      color: $text-dark;
+    }
+  }
+
+  /* 
+  |-----------------------------------
+  | inicio navbar menu
+  |-----------------------------------
+  */
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+    flex-basis: auto;
+    flex-grow: 1;
+    padding-bottom: 10px;
+
+    @media (max-width: 768px) {
+      display: none;
+      text-align: center;
+    }
+
+    // Ul
+    .navbar-nav {
+      margin: auto;
+      flex-direction: row;
+      display: flex;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        display: block;
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(90deg, ($Color-Fondo) 0%, ($base-color) 50%, ($Color-Fondo) 100%) 1;
+        padding-top: 16px;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        margin-top: 1rem;
+      }
+
+      >li {
+        padding: 0 40px;
+        transition: all 1s ease;
+
+        @media (min-width:769px)and(max-width: 1032px) {
+          transition: all 1s ease;
+          padding: 15px;
+        }
+
+        >a {
+          color: $text-dark;
+          text-decoration: none;
+          display: inline-block;
+          padding: $navbar-link-padding-y $navbar-link-padding-x;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            color: $navbar-link-hover;
+            transition: all 0.2s ease-in-out;
+          }
+
+          @media (max-width: 768px) {
+            border-bottom: 1px solid $border-color;
+          }
+        }
+
+        &.active {
+          a {
+            color: $Principal-color;
+          }
+        }
+      }
+
+      .navbar-dropdown {
+        transition: all 0.2s ease-in-out;
+
+        .dropdown {
+          list-style: none;
+          position: absolute;
+          top: 150%;
+          left: 0;
+          background-color: #151515;
+          padding-top: $navbar-dropdown-padding-y;
+          padding-bottom: $navbar-dropdown-padding-y;
+          min-width: 160px;
+          width: auto;
+          white-space: nowrap;
+          box-shadow: $navbar-dropdown-shadow;
+          z-index: 99999;
+          border-radius: 2px;
+          display: none;
+
+
+          @media (max-width: 768px) {
+            position: relative;
+            box-shadow: none;
+          }
+
+          li {
+            a {
+              color: $text-dark;
+              padding: $navbar-dropdown-item-padding-y $navbar-dropdown-item-padding-x;
+              display: block;
+              transition: all 0.2s ease-in-out;
+
+              &:hover {
+                color: #c4242c;
+                font-weight: bold;
+                transition: all 0.2s ease-in-out;
+              }
+            }
+          }
+
+          &.show {
+            display: block !important;
+          }
+        }
+      }
+
+      .dropdown>.separator {
+        height: 1px;
+        width: 100%;
+
+        margin: {
+          top: $navbar-dropdown-separator-margin-y;
+          bottom: $navbar-dropdown-separator-margin-y;
+        }
+
+        ;
+        background-color: $navbar-body-color;
+      }
+    }
+  }
+
+  .navbar-dropdown {
+    position: relative;
+  }
+}
+
+
+.navbar .navbar-header>a span {
+  color: $base-color;
+}
+
+.navbar .navbar-header h4 {
+  font-weight: 500;
+  font-size: 1.25rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.05rem;
+  }
+}
+
+/* logo */
+
+.logo {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+/* logo colores */
+
+// contorno
+.logo-circle {
+  // fill: url('#grad1');
+  fill: $base-color;
+
+  &:hover {
+    fill: white;
+  }
+
+}
+
+//interor
+.logo-inter {
+  fill: white;
+}
+
+#text-decoration-none {
+  text-decoration: none;
+  list-style: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
+  margin-top: 0;
+    margin-bottom: 0;
+}
