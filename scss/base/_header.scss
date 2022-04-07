@@ -1,31 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
-
-$font-family: 'Roboto',
-sans-serif;
-$font-size-base: 0.925rem;
-$base-color: #66f;
-$text-dark: #3c4250;
-$border-color: #eceef3;
-
-$navbar-body-color: #151515;
-// $navbar-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.035);
-$navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-$navbar-padding-y: 1rem;
-$navbar-padding-x: 1.15rem;
-
-$navbar-link-hover: $base-color;
-$navbar-link-padding-y: 0.5rem;
-$navbar-link-padding-x: 1rem;
-
-$navbar-dropdown-padding-y: 0.5rem;
-$navbar-dropdown-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-$navbar-dropdown-radius: 0.75rem;
-
-$navbar-dropdown-item-padding-y: 0.25rem;
-$navbar-dropdown-item-padding-x: 1rem;
-
-$navbar-dropdown-separator-margin-y: 9px;
-$navbar-dropdown-separator-color: $border-color;
+@import "./../components/variables";
 
 * {
   box-sizing: border-box;
@@ -38,21 +12,31 @@ $navbar-dropdown-separator-color: $border-color;
 
 
 header {
-  box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 1px 6px 5px 0px rgba(0, 0, 0, 0.75);
+
+  //sombreado
+  border-bottom: 1px solid black;
+  -webkit-box-shadow: 0px 11px 14px -4px #6e6c6c;
+  box-shadow: 1px 3px 7px 3px #0f0f0f;
+  //
   margin-bottom: 5%;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  //stycky header
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  background-image: none;
 }
-
-
-
-
-
 
 
 body {
   font-family: $font-family;
   font-size: $font-size-base;
+  background-color: $navbar-body-color;
+  background-image: url('../../src/img-noise-361x370.png');
 }
 
 a {
@@ -75,7 +59,7 @@ a {
   }
 }
 
-// Start navbar
+// inicio navbar
 
 .navbar,
 .navbar>.container-nav {
@@ -84,6 +68,8 @@ a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  z-index: 999;
+  background-color: $navbar-body-color;
 
   @media (max-width: 768px) {
     display: block;
@@ -93,13 +79,12 @@ a {
 .navbar {
   box-shadow: $navbar-shadow;
   background-color: $navbar-body-color;
-  padding: $navbar-padding-y $navbar-padding-x;
+  height: 97px;
+
 
 
   .container-nav {
-    @media (min-width: 576px) {
-      max-width: 540px;
-    }
+    @media (min-width: 576px) {}
 
     @media (min-width: 768px) {
       max-width: 720px;
@@ -114,13 +99,10 @@ a {
     }
   }
 
-  /*
-  |-----------------------------------
-  | Start navbar logo or brand etc..
-  |-----------------------------------
-  */
+
   .navbar-header {
-    background-color: #151515;
+    background-color: $navbar-body-color;
+    background-image: none;
     display: flex;
     align-items: center;
 
@@ -132,9 +114,10 @@ a {
       flex-direction: row-reverse;
     }
 
+
+
     .navbar-toggler {
-      // border-radius: 5px;
-      // background-color: transparent;
+
       cursor: pointer;
       border: none;
       display: none;
@@ -162,9 +145,9 @@ a {
     }
   }
 
-  /*
+  /* 
   |-----------------------------------
-  | Start navbar menu
+  | inicio navbar menu
   |-----------------------------------
   */
   .navbar-menu {
@@ -172,6 +155,7 @@ a {
     align-items: center;
     flex-basis: auto;
     flex-grow: 1;
+    padding-bottom: 10px;
 
     @media (max-width: 768px) {
       display: none;
@@ -180,7 +164,7 @@ a {
 
     // Ul
     .navbar-nav {
-      margin-left: auto;
+      margin: auto;
       flex-direction: row;
       display: flex;
       padding-left: 0;
@@ -190,19 +174,35 @@ a {
       @media (max-width: 768px) {
         width: 100%;
         display: block;
-        border-top: 1px solid #EEE;
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(90deg, ($Color-Fondo) 0%, ($base-color) 50%, ($Color-Fondo) 100%) 1;
+        padding-top: 16px;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
         margin-top: 1rem;
       }
 
       >li {
+        padding: 0 40px;
+        transition: all 1s ease;
+
+        @media (min-width:769px)and(max-width: 1032px) {
+          transition: all 1s ease;
+          padding: 15px;
+        }
+
         >a {
           color: $text-dark;
           text-decoration: none;
           display: inline-block;
           padding: $navbar-link-padding-y $navbar-link-padding-x;
+          transition: all 0.2s ease-in-out;
 
           &:hover {
             color: $navbar-link-hover;
+            transition: all 0.2s ease-in-out;
           }
 
           @media (max-width: 768px) {
@@ -212,12 +212,14 @@ a {
 
         &.active {
           a {
-            color: $base-color;
+            color: $Principal-color;
           }
         }
       }
 
       .navbar-dropdown {
+        transition: all 0.2s ease-in-out;
+
         .dropdown {
           list-style: none;
           position: absolute;
@@ -231,8 +233,9 @@ a {
           white-space: nowrap;
           box-shadow: $navbar-dropdown-shadow;
           z-index: 99999;
-          border-radius: $navbar-dropdown-radius;
+          border-radius: 2px;
           display: none;
+
 
           @media (max-width: 768px) {
             position: relative;
@@ -244,6 +247,13 @@ a {
               color: $text-dark;
               padding: $navbar-dropdown-item-padding-y $navbar-dropdown-item-padding-x;
               display: block;
+              transition: all 0.2s ease-in-out;
+
+              &:hover {
+                color: #c4242c;
+                font-weight: bold;
+                transition: all 0.2s ease-in-out;
+              }
             }
           }
 
@@ -263,7 +273,7 @@ a {
         }
 
         ;
-        background-color: $navbar-dropdown-separator-color;
+        background-color: $navbar-body-color;
       }
     }
   }
@@ -274,7 +284,6 @@ a {
 }
 
 
-// Custom
 .navbar .navbar-header>a span {
   color: $base-color;
 }
@@ -294,5 +303,34 @@ a {
   display: flex;
   width: 80px;
   height: 80px;
-  border-radius: 50px;
+  border-radius: 50%;
+}
+
+/* logo colores */
+
+// contorno
+.logo-circle {
+  // fill: url('#grad1');
+  fill: $base-color;
+
+  &:hover {
+    fill: white;
+  }
+
+}
+
+//interor
+.logo-inter {
+  fill: white;
+}
+
+#text-decoration-none {
+  text-decoration: none;
+  list-style: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
+  margin-top: 0;
+    margin-bottom: 0;
 }

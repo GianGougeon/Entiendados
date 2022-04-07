@@ -1,5 +1,12 @@
-@import "./base/header.scss";
 
-@import "./components/base.scss";
+// Variables
+@import "./components/variables";
+
+//Header Footer
+@import "./base/header.scss";
+@import "./base/footer";
+
+//Main content
+@import "./components/carrusel";
 @import "./components/categorias.scss";
 @import "./components/logowp";

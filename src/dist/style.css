@@ -1,0 +1,37 @@
+div {
+	--angle: 0deg;
+	width: 50vmin;
+	height: 50vmin;
+	border: 5px solid;
+	border-image: linear-gradient(var(--angle), green, yellow) 1;
+	
+	animation: 10s rotate linear infinite;
+}
+
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+
+input[type="checkbox"]:after {
+	content: 'Toggle Fill';
+	white-space: nowrap;
+	padding-left: 1.5em;
+}
+
+input[type="checkbox"]:checked + div {
+	border-image-slice: 1 fill;
+}
+
+footer {
+	text-align: center;
+	font-style: italic;
+}

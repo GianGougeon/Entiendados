@@ -14,7 +14,6 @@ if (dropdowns.length) {
   dropdowns.forEach((dropdown) => {
     dropdown.addEventListener('click', (event) => {
       let target = document.querySelector(`#${event.target.dataset.dropdown}`)
-
       if (target) {
         if (target.classList.contains('show')) {
           target.classList.remove('show')

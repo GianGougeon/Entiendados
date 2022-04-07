@@ -1,0 +1,24 @@
+/* Carrusel gradiant borde */
+
+.carousel-inner {
+	--angle: 0deg;
+	border: 5px solid;
+	border-image: linear-gradient(var(--angle), $base-color, $Color-Fondo) 1;
+    
+	
+	animation: 10s rotate linear infinite;
+}
+
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+

@@ -1,40 +1,55 @@
-// color diseño
-$colores-g: rgb(236, 236, 236);
-// color texto-diseño
-$colores-txt: #e6f9af;
-// color diseño 2
-$colores-txt2: #8bbeb2;
-// Color footer/header
-$colores-foothead: #0d0630;
-// color fondo general gris
-$colores-fondo-general: #ececec;
-// color texto negro no tan fuerte
-$colores-txt-black: #3c3a3a;
-
-
-//fuentes
-
-// Montserrat
-$Montserrat: "Montserrat";
-// TiemposFont
-$TiemposFont: "TiemposFont";
-
-
-
-
-
-
-
 .categorias {
+    padding-top: 123px;
     color: white;
 }
 
 
-//////////////@at-root
+
+//categoria H
+$font-size-categoria-h: calc(1.325rem + .9vw);
 
 
+#categorias-h {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: $font-size-categoria-h;
 
+    &::before {
+        flex-grow: 1;
+        height: 2px;
+        content: '\a0';
+        background: linear-gradient(90deg, ($Color-Fondo) 0%, ($base-color) 100%);
+        position: relative;
+        top: calc($font-size-categoria-h / 2);
 
+    }
+
+    &::after {
+        flex-grow: 1;
+        height: 2px;
+        content: '\a0';
+        background: linear-gradient(280deg, ($Color-Fondo) 0%, ($base-color) 100%);
+        position: relative;
+        top: calc($font-size-categoria-h / 2);
+    }
+
+    >h2 {
+
+        border-left: 2px solid $base-color;
+        border-right: 2px solid $base-color;
+        padding: 0 10px;
+
+    }
+}
+
+b {
+
+    height: 5px;
+    color: #a8bb1e;
+
+}
 
 /* Titulo */
 .section-title-container {
@@ -139,17 +154,21 @@ $TiemposFont: "TiemposFont";
 
 .divcat-m {
     margin-top: 24px;
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(90deg, ($Color-Fondo) 0%, ($base-color) 50%, ($Color-Fondo) 100%) 1;
+    padding-top: 16px;
+    border-left: none;
+    border-right: none;
 }
 
 @media screen and (min-width:320px) {
     .margtop {
         margin-top: 16px
     }
-
     .padbott {
         padding-bottom: 16px
     }
-
 }
 
 
@@ -164,8 +183,8 @@ $TiemposFont: "TiemposFont";
     white-space: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
+    border-width: 4px;
+   
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -302,8 +321,8 @@ $TiemposFont: "TiemposFont";
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     max-width: 100%;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -489,6 +508,9 @@ $TiemposFont: "TiemposFont";
     padding-top: 144.357%;
     border: solid $colores-fondo-general;
     border-width: 1px;
+/* color borde cartas */
+    border: 3px solid black;
+    border-image: linear-gradient(0deg, $Color-Fondo, $base-color) 1;
 
 }
 
@@ -572,15 +594,15 @@ $TiemposFont: "TiemposFont";
     position: absolute;
     left: 50%;
     top: 50%;
-    
+
     font-size: 4.5vmin;
     -webkit-transform: translate(-50%, -150%);
-        -ms-transform: translate(-50%, -150%);
-            transform: translate(-50%, -150%);
+    -ms-transform: translate(-50%, -150%);
+    transform: translate(-50%, -150%);
     text-transform: uppercase;
     font-weight: bold;
     color: white;
-    
+
 
 }
 
@@ -601,7 +623,7 @@ $TiemposFont: "TiemposFont";
     }
 
     .logo-sec-tienda {
-        
+
         font-size: 1.35em;
         color: $colores-foothead;
     }
@@ -615,7 +637,7 @@ $TiemposFont: "TiemposFont";
     }
 
     .logo-sec-tienda {
-        
+
         font-size: 1.1em;
         color: $colores-foothead;
 
@@ -636,13 +658,14 @@ $TiemposFont: "TiemposFont";
 
 
 
-.nuevo-section{
+.nuevo-section {
     padding-top: 7em;
     padding-bottom: 7em;
 }
+
 .nuevo-section-portada {
     background-color: white;
-    
+
 }
 
 .img-nuevo-portada {
@@ -670,6 +693,7 @@ $TiemposFont: "TiemposFont";
     flex-wrap: wrap;
 
 }
+
 .t2b-n {
     padding-top: 24px;
     -ms-flex-preferred-size: 25%;
@@ -677,6 +701,7 @@ $TiemposFont: "TiemposFont";
     max-width: 25%;
     display: none;
 }
+
 @media screen and (min-width:1024px) {
     .t2b-n {
         padding-top: 16px;
@@ -698,7 +723,7 @@ $TiemposFont: "TiemposFont";
 
 /* tienda */
 .logo-sec-nuevo {
-    
+
     font-size: 1.35em;
     color: $colores-foothead;
 }
