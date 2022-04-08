@@ -14,7 +14,9 @@ $font-size-categoria-h: calc(1.325rem + .9vw);
     justify-content: center;
     text-transform: uppercase;
     margin: 0;
-    font-size: $font-size-categoria-h;
+    font-size: 25px;
+
+
 
     &::before {
         flex-grow: 1;
@@ -43,6 +45,22 @@ $font-size-categoria-h: calc(1.325rem + .9vw);
 
     }
 }
+#categorias-h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: $text-dark;
+    font-family: $Sans-font;
+}
+.text-style{
+    color: $text-dark;
+    font-size: 1.2rem;
+}
+
+.style-h3 {
+    color: $text-dark;
+    display: flex;
+}
+
 
 b {
 
@@ -363,6 +381,7 @@ b {
 
 
 .t3b {
+    padding-top: 3%;
     font-weight: bold;
     padding-bottom: 12px;
     display: -webkit-inline-box;
@@ -403,8 +422,8 @@ b {
     -moz-osx-font-smoothing: grayscale;
     margin-bottom: 0;
     margin-top: 0;
+    color: $text-dark;
 
-    color: #a8bb1e;
 
 }
 
@@ -418,13 +437,9 @@ b {
     margin-bottom: 0;
     margin-top: 0;
 
-    color: $colores-txt2;
+    color: $base-color;
 }
 
-.t6ahover:hover {
-    color: white;
-
-}
 
 
 
@@ -746,9 +761,12 @@ img {
     left: 0;
     height: auto;
     width: 101%;
-    -webkit-transition: opacity .2s ease-in-out;
-    -o-transition: opacity .2s ease-in-out;
-    transition: opacity .2s ease-in-out;
+    
+    transition: all .2s;
+    &:hover {
+        transition: all .2s;
+        transform: scale(1.05);
+    }
 }
 
 .img-nuevo .img-top:hover {

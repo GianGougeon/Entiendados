@@ -9,8 +9,8 @@
 
 //colores principales
 $Principal-color: #8424c4;
-$Color-Fondo: #131417;
-$navbar-body-color: #212121;
+$Color-Fondo: #1c1b1b;
+$navbar-body-color: #151515;
 
 /////////////////////////////////////////////////////////////////////////////
 
@@ -66,3 +66,8 @@ $Montserrat: "Montserrat";
 // TiemposFont
 $TiemposFont: "TiemposFont";
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+$Sans-font: 'Open Sans', sans-serif;
