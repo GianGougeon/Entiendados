@@ -4,14 +4,27 @@
 
 /* Variables */
 
-
-
+// #8424c4
+// $Color-Fondo: #1c1b1b;
 
 //colores principales
-$Principal-color: #8424c4;
+$Principal-color: #7703c5;
+$Principal-color-2: red;
+$Principal-color-sombra: rgba($Principal-color, 0.80);
+// oscuro
 $Color-Fondo: #1c1b1b;
 $navbar-body-color: #151515;
 
+//calculo lineas degrades
+$font-size-categoria-h: calc(1.5em);
+
+$Degrade-fondo: rgba($Principal-color, 0.30);
+//whatsapp color
+$base-color-wp: #25d366;
+//instagram color
+$base-color-ig: #e1306c;
+//facebook color
+$base-color-fb: #3b5998;
 /////////////////////////////////////////////////////////////////////////////
 
 
@@ -24,6 +37,7 @@ $font-size-base: 1rem;
 $text-dark: #d0d4db;
 $border-color: $Principal-color;
 $base-color: $Principal-color;
+$base-color2: $Principal-color-2;
 
 $navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 $navbar-padding-y: 1rem;
@@ -45,29 +59,21 @@ $navbar-dropdown-separator-color: $border-color;
 
 /////////////////////////////////////////////////////////////////////////////
 
-// color diseño
-$colores-g: rgb(236, 236, 236);
-// color texto-diseño
-$colores-txt: #e6f9af;
-// color diseño 2
-$colores-txt2: #8bbeb2;
+
+
 // Color footer/header
 $colores-foothead: #0d0630;
 // color fondo general gris
 $colores-fondo-general: #ececec;
 // color texto negro no tan fuerte
-$colores-txt-black: #3c3a3a;
-
-
-//fuentes
-
-// Montserrat
-$Montserrat: "Montserrat";
-// TiemposFont
-$TiemposFont: "TiemposFont";
-
 
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
+
+//fuentes
+
+
 $Sans-font: 'Open Sans', sans-serif;
+
+

@@ -5,52 +5,6 @@
 
 
 
-//categoria H
-$font-size-categoria-h: calc(1.325rem + .9vw);
-
-
-#categorias-h {
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    margin: 0;
-    font-size: 25px;
-
-
-
-    &::before {
-        flex-grow: 1;
-        height: 2px;
-        content: '\a0';
-        background: linear-gradient(90deg, ($Color-Fondo) 0%, ($base-color) 100%);
-        position: relative;
-        top: calc($font-size-categoria-h / 2);
-
-    }
-
-    &::after {
-        flex-grow: 1;
-        height: 2px;
-        content: '\a0';
-        background: linear-gradient(280deg, ($Color-Fondo) 0%, ($base-color) 100%);
-        position: relative;
-        top: calc($font-size-categoria-h / 2);
-    }
-
-    >h2 {
-
-        border-left: 2px solid $base-color;
-        border-right: 2px solid $base-color;
-        padding: 0 10px;
-
-    }
-}
-#categorias-h2{
-    font-size: 35px;
-    font-weight: 600;
-    color: $text-dark;
-    font-family: $Sans-font;
-}
 .text-style{
     color: $text-dark;
     font-size: 1.2rem;
@@ -102,7 +56,7 @@ b {
     text-transform: uppercase;
     font-weight: bold;
     padding: 0 2em;
-    font-family: $Montserrat;
+    font-family: $Sans-font;
 }
 
 .section-title b {
@@ -174,6 +128,7 @@ b {
     margin-top: 24px;
     border-width: 4px;
     border-style: solid;
+    
     border-image: linear-gradient(90deg, ($Color-Fondo) 0%, ($base-color) 50%, ($Color-Fondo) 100%) 1;
     padding-top: 16px;
     border-left: none;
@@ -394,7 +349,9 @@ b {
 }
 
 .t4a {
-    padding-left: 12px
+    padding-left: 12px;
+    position: sticky;
+    top: 20%;
 }
 
 
@@ -501,8 +458,6 @@ b {
 
 }
 
-
-
 .t9a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -524,8 +479,9 @@ b {
     border: solid $colores-fondo-general;
     border-width: 1px;
 /* color borde cartas */
-    border: 3px solid black;
-    border-image: linear-gradient(0deg, $Color-Fondo, $base-color) 1;
+    border: 5px solid black;
+    
+    border-image: linear-gradient(0deg, transparent,transparent, $base-color) 1;
 
 }
 

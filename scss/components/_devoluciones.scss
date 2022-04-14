@@ -1,12 +1,109 @@
+//categoria H
+
+
+#categorias-h {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 25px;
+
+
+
+
+
+    >h2 {
+
+        border-left: 2px solid $base-color;
+        border-right: 2px solid $base-color;
+        padding: 0 10px
+    }
+}
+
+
+
+#comprarPadding {
+    padding-top: 5%;
+}
+
 .comprar,
-.devoluciones{
+.devoluciones {
     padding: 0 0 5% 0;
 }
-.div-subtitle{
+
+.div-subtitle {
     padding: 3% 0;
 }
-#b-style{
 
-        padding: 10px;
+#b-style {
 
+    padding: 10px;
+
+}
+.b-style {
+
+    padding: 10px;
+
+}
+
+#categorias-h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: $text-dark;
+    font-family: $Sans-font;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+
+    .devoluciones-mobile {
+        padding: 8% 5%;
+    }
+
+    .text-style {
+
+    
+
+    }
+
+    #categorias-h {
+        padding: 5%;
+    }
+
+    #categorias-h {
+        margin: 0 0 40px 0;
+    }
+    #categorias-h2{
+        margin: 5% ;
+    }
+
+}
+
+
+
+@media (min-width: 601px) {
+    #categorias-h {
+        >h2 {
+            padding: 0 10px;
+        }
+
+        &::before {
+            flex-grow: 1;
+            height: 2px;
+            content: '\a0';
+            background: linear-gradient(90deg, ($Color-Fondo) 0%, ($base-color) 100%);
+            position: relative;
+            top: calc($font-size-categoria-h / 2);
+
+        }
+
+        &::after {
+            flex-grow: 1;
+            height: 2px;
+            content: '\a0';
+            background: linear-gradient(280deg, ($Color-Fondo) 0%, ($base-color) 100%);
+            position: relative;
+            top: calc($font-size-categoria-h / 2);
+        }
+    }
 }

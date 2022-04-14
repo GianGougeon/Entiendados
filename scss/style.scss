@@ -2,14 +2,20 @@
 // Variables
 @import "./components/variables";
 
+// scrollbar
+@import "./base/scrollbar";
+
 //Header Footer
 @import "./base/header";
 @import "./base/footer";
 
+
 //Main content
-@import "./components/carrusel";
+@import "./components/animaciones";
 @import "./components/categorias";
 @import "./components/logowp";
+@import "./components/categoriasPlus";
 
 //view
 @import "./components/devoluciones";
+@import "./components/estructura";

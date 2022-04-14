@@ -8,9 +8,17 @@
 }
 
 
+html{
+  overflow-x: hidden;
+}
 
-
-
+body {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  background-color: $Color-Fondo;
+  background-image: linear-gradient(20deg, $base-color 0%, #181818 46%,#181818 46%, $Color-Fondo 100%);
+  
+}
 header {
 
   //sombreado
@@ -18,7 +26,7 @@ header {
   -webkit-box-shadow: 0px 11px 14px -4px #6e6c6c;
   box-shadow: 1px 3px 7px 3px #0f0f0f;
   //
-  margin-bottom: 5%;
+  
   text-transform: uppercase;
   font-weight: bold;
 
@@ -32,12 +40,7 @@ header {
 }
 
 
-body {
-  font-family: $font-family;
-  font-size: $font-size-base;
-  background-color: $Color-Fondo;
-  background-image: url('../../src/img-noise-361x370.png');
-}
+
 
 a {
   text-decoration: none;
@@ -326,6 +329,89 @@ a {
 }
 
 #text-decoration-none {
+  text-decoration: none;
+  list-style: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
+  margin-top: 0;
+    margin-bottom: 0;
+}
+#text-decoration-none2 {
+  text-decoration: none;
+  list-style: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
+  margin-top: 0;
+    margin-bottom: 0;
+}
+
+#text-decoration-none3 {
+  text-decoration: none;
+  list-style: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
+  margin-top: 0;
+    margin-bottom: 0;
+}
+
+#text-decoration-none4 {
+  text-decoration: none;
+  list-style: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
+  margin-top: 0;
+    margin-bottom: 0;
+}
+
+#text-decoration-none5 {
+  text-decoration: none;
+  list-style: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
+  margin-top: 0;
+    margin-bottom: 0;
+}
+#text-decoration-none6 {
+  text-decoration: none;
+  list-style: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
+  margin-top: 0;
+    margin-bottom: 0;
+}
+#text-decoration-none7 {
+  text-decoration: none;
+  list-style: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
+  margin-top: 0;
+    margin-bottom: 0;
+}
+#text-decoration-none8 {
+  text-decoration: none;
+  list-style: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
+  margin-top: 0;
+    margin-bottom: 0;
+}
+#text-decoration-none9 {
   text-decoration: none;
   list-style: none;
   background-color: transparent;

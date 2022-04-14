@@ -16,7 +16,8 @@ footer {
     border-left: none;
     border-right: none;
     border-top: none;
-    border-image: linear-gradient(90deg, $Color-Fondo, $base-color) 1;
+    border-image: linear-gradient(90deg, $navbar-body-color 0%, $base-color 50%, $navbar-body-color 100%) 1;
+
 
     padding-bottom: 1.5%;
     margin: 0 0 3% 0%;
@@ -118,33 +119,7 @@ footer {
 }
 
 
-/* media queries */
 
-@media screen and (max-width: 640px) {
-
-    .wrapper ul li {
-        margin-top: 10px;
-    }
-
-    .wrapper ul li.google {
-        margin-left: 60px;
-    }
-}
-
-
-@media screen and (max-width: 340px) {
-    .wrapper {
-        width: 150px;
-    }
-
-    .wrapper ul li {
-        margin: 15px;
-    }
-
-    .wrapper ul li.google {
-        margin-left: 15px;
-    }
-}
 
 /* youtube link */
 .youtube {
@@ -186,7 +161,7 @@ footer {
     border-left: none;
     border-right: none;
     border-top: none;
-    border-image: linear-gradient(90deg, $Color-Fondo, $base-color) 1;
+    border-image: linear-gradient(90deg, $navbar-body-color 0%, $base-color 50%, $navbar-body-color 100%) 1;
     padding-bottom: 1%;
     margin: 0 0% 2% 0%;
 }
@@ -197,13 +172,16 @@ footer {
     height: 150px;
     border-radius: 50%;
 }
-
 .h3-footer {
     color: $text-dark;
     display: flex;
     justify-content: center;
 }
-
+.h3-footer1 {
+    color: $text-dark;
+    display: flex;
+    justify-content: center;
+}
 #h4-footer {
     color: $text-dark;
     display: flex;
@@ -212,8 +190,67 @@ footer {
     font-size: 1rem;
     padding: 5px 0;
 }
+#h4-footer2 {
+    color: $text-dark;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 26%;
+    font-size: 1rem;
+    padding: 5px 0;
+}
 
-
+#h4-footer3 {
+    color: $text-dark;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 26%;
+    font-size: 1rem;
+    padding: 5px 0;
+}
+#h4-footer4 {
+    color: $text-dark;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 26%;
+    font-size: 1rem;
+    padding: 5px 0;
+}
+#h4-footer5 {
+    color: $text-dark;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 26%;
+    font-size: 1rem;
+    padding: 5px 0;
+}
+#h4-footer6 {
+    color: $text-dark;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 26%;
+    font-size: 1rem;
+    padding: 5px 0;
+}
+#h4-footer7 {
+    color: $text-dark;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 26%;
+    font-size: 1rem;
+    padding: 5px 0;
+}
+#h4-footer8 {
+    color: $text-dark;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 26%;
+    font-size: 1rem;
+    padding: 5px 0;
+}
+.d-block li{
+    color: $text-dark;
+    list-style-type: none;
+}
 .fa-credit-card-alt {
     color: $text-dark;
     font-size: 1em;
@@ -226,7 +263,7 @@ footer {
     padding: 1.5px 10px;
 }
 
-/* media mobile */
+/* @media mobile */
 @media (max-width:991px) {
     .mobile-col {
         margin: 5% 0;
@@ -240,6 +277,7 @@ footer {
     }
     .wrapper{
         margin: 0;
+        padding-bottom: 16px;
         
     }
     .bottom-liner-mobile{
@@ -248,12 +286,37 @@ footer {
         border-left: none;
         border-right: none;
         border-top: none;
-        border-image: linear-gradient(90deg, $Color-Fondo, $base-color) 1;
+        border-image: linear-gradient(90deg, $navbar-body-color 0%, $base-color 50%, $navbar-body-color 100%) 1;
         padding-bottom: 5%;
     
     }
 }
 
+@media screen and (max-width: 640px) {
+
+    .wrapper ul li {
+        margin-top: 10px;
+    }
+
+    .wrapper ul li.google {
+        margin-left: 60px;
+    }
+}
+
+
+@media screen and (max-width: 340px) {
+    .wrapper {
+        width: 150px;
+    }
+
+    .wrapper ul li {
+        margin: 15px;
+    }
+
+    .wrapper ul li.google {
+        margin-left: 15px;
+    }
+}
 
 .texto-footer {
     color: $text-dark;

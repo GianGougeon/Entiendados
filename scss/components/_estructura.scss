@@ -1,0 +1,184 @@
+.datos-section {
+    padding: 5% 0;
+}
+
+.datos-col-txt {
+    padding-left: 3%;
+}
+
+.img-datos {
+    --angle: 0deg;
+    border: 5px solid;
+    border-image: linear-gradient(var(--angle), $base-color, red) 1;
+
+
+    animation: 10s rotate linear infinite;
+}
+
+
+
+
+.nombre-precio-datos {
+    color: $text-dark;
+    border-width: 1px;
+    border: 2px solid black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-image: linear-gradient(90deg, #151515 0%, $base-color 50%, #151515 100%) 1;
+    padding: 5% 0;
+}
+
+
+
+.row-datos {
+    display: flex;
+    flex-direction: column;
+    color: $text-dark;
+    padding: 5% 0;
+
+    border-width: 1px;
+    border: 2px solid black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-image: linear-gradient(90deg, #151515 0%, $base-color 50%, #151515 100%) 1;
+}
+
+
+.colores-datos {
+    padding: 5% 0;
+    color: $text-dark;
+
+    border-width: 1px;
+    border: 2px solid black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-image: linear-gradient(90deg, #151515 0%, $base-color 50%, #151515 100%) 1;
+}
+
+
+.btn-variant-content {
+    margin: 0 5px;
+
+    display: inline-block;
+
+    height: 24px;
+    width: 24px;
+
+    animation: morph 8s ease-in-out infinite;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background: red;
+    transition: all 1s ease-in-out; 
+    z-index: 5;
+}
+
+/* boton compra */
+.btn-compra {
+    border: none;
+    font-family: 'Lato';
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-compra:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn-compra:before {
+    font-family: 'FontAwesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* Icon separator */
+.btn-sep-compra {
+    padding: 20px 69px;
+}
+
+.btn-sep-compra:before {
+    background: rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Button 3 */
+.btn-4 {
+    background: $base-color-wp;
+    color: #fff;
+}
+
+.btn-4:hover {
+    opacity: 0.8;
+}
+
+.btn-4:active {
+    background: #686868;
+
+}
+
+.btn-4:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+}
+
+/* Icons */
+
+
+.icon-send:before {
+    content: "\f232";
+    ;
+}
+
+
+/* Medias mobile */
+
+@media (max-width: 768px) {
+    .img-datos {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .colum-img-datos {
+        margin-bottom: 10%;
+    }
+
+    .datos-center {
+
+        display: flex;
+        justify-content: center;
+    }
+}
