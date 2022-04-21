@@ -1,10 +1,14 @@
 @charset "UTF-8";
 /* Variables */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
 body::-webkit-scrollbar {
   width: 0.7em;
 }
@@ -284,9 +288,6 @@ a {
 /* logo colores */
 .logo-circle {
   fill: #7703c5;
-}
-.logo-circle:hover {
-  fill: white;
 }
 
 .logo-inter {
@@ -1466,6 +1467,7 @@ img {
 .vidrios,
 .accesorios,
 .fundas {
+  height: 88vh;
   font-weight: bold;
   -webkit-box-shadow: inset 0px 0px 12px 3px #000000;
   box-shadow: inset 0px 0px 12px 3px #000000;
@@ -1479,12 +1481,17 @@ img {
   border-image-source: none;
   border-image-width: 1;
   -o-border-image: -o-linear-gradient(var(--angle), #7703c5, red) 1;
-  border-image: -webkit-gradient(linear, left top, left bottom, from(var(--angle)), color-stop(#7703c5), to(red)) 1;
-  border-image: linear-gradient(var(--angle), #7703c5, red) 1;
   -webkit-animation: 10s rotate linear infinite;
   animation: 10s rotate linear infinite;
 }
 
+@media (max-width: 768px) {
+  .vidrios,
+.accesorios,
+.fundas {
+    height: 75vh;
+  }
+}
 #center-row {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1505,10 +1512,6 @@ img {
 }
 
 /* vidrios */
-.vidrios {
-  height: 88vh;
-}
-
 .protectorH {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
@@ -1517,18 +1520,19 @@ img {
 }
 .protectorH > h2 {
   padding-top: 5%;
-  font-style: "Roboto", sans-serif;
+  font-family: "Concert One", cursive;
   text-transform: uppercase;
-  text-shadow: 0px 5px 5px #969696;
+  text-shadow: 0px 5px 5px #000000;
   font-size: calc(1rem + 8vmin);
-  background: -webkit-linear-gradient(#4e4646, #000);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: #faf5f56e;
 }
 .protectorH > h3 {
-  font-size: 3rem;
-  font-style: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-family: "Concert One", cursive;
   padding-top: 9%;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
   text-transform: uppercase;
 }
 
@@ -1554,16 +1558,12 @@ img {
   padding: 2% 2%;
 }
 .div-descrip-devol > p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-style: "Roboto", sans-serif;
   color: #d0d4db;
 }
 
 /* /////////// fundas ///////////// */
-.fundas {
-  height: 95vh;
-}
-
 .section-fundas {
   padding-top: 5%;
   margin: 5% 0;
@@ -1577,17 +1577,15 @@ img {
 }
 .fundasH > h2 {
   padding-top: 5%;
-  font-style: "Roboto", sans-serif;
+  font-family: "Concert One", cursive;
   text-transform: uppercase;
-  text-shadow: 0px 5px 5px #969696;
+  text-shadow: 0px 5px 5px #000000;
   font-size: calc(1rem + 8vmin);
-  background: -webkit-linear-gradient(#4e4646, #000);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: #faf5f56e;
 }
 .fundasH > h3 {
   font-size: 2rem;
-  font-style: "Roboto", sans-serif;
+  font-family: "Concert One", cursive;
   padding-top: 9%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -1596,7 +1594,7 @@ img {
 }
 .fundasH > p {
   font-size: 1.3rem;
-  font-style: "Roboto", sans-serif;
+  font-family: "Concert One", cursive;
   color: #1c1b1b;
   margin-top: 20%;
   padding: 4% 0 4% 2%;
@@ -1609,7 +1607,6 @@ img {
 /* ////////// Accesorios /////// */
 .accesorios {
   margin-bottom: 10%;
-  height: 95vh;
 }
 
 .accesoriosH {
@@ -1620,17 +1617,15 @@ img {
 }
 .accesoriosH > h2 {
   padding-top: 5%;
-  font-style: "Roboto", sans-serif;
+  font-family: "Concert One", cursive;
   text-transform: uppercase;
-  text-shadow: 0px 5px 5px #969696;
+  text-shadow: 0px 5px 5px #000000;
   font-size: calc(1rem + 8vmin);
-  background: -webkit-linear-gradient(#4e4646, #000);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: #faf5f56e;
 }
 .accesoriosH > h3 {
   font-size: 2rem;
-  font-style: "Roboto", sans-serif;
+  font-family: "Concert One", cursive;
   padding-top: 9%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;

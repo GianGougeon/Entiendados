@@ -9,6 +9,11 @@
 .accesorios,
 .fundas {
 
+
+    height: 88vh;
+
+
+
     font-weight: bold;
     -webkit-box-shadow: inset 0px 0px 12px 3px #000000;
     box-shadow: inset 0px 0px 12px 3px #000000;
@@ -18,38 +23,44 @@
 
     background: $Degrade-fondo;
 
-    
+
     border: 10px solid;
     border-image-outset: 0;
     border-image-repeat: stretch;
     border-image-slice: 100%;
     border-image-source: none;
     border-image-width: 1;
-    
+
     -o-border-image: -o-linear-gradient(var(--angle), $base-color, $base-color2) 1;
-    
-       border-image: -webkit-gradient(linear, left top, left bottom, from(var(--angle)), color-stop($base-color), to($base-color2)) 1;
-    
-       border-image: linear-gradient(var(--angle), $base-color, $base-color2) 1;
-    
+
     -webkit-animation: 10s rotate linear infinite;
-    
-            animation: 10s rotate linear infinite;
+
+    animation: 10s rotate linear infinite;
 
 
 }
 
+@media (max-width: 768px) {
+
+    .vidrios,
+    .accesorios,
+    .fundas {
+        height: 75vh;
+
+    }
+}
+
 #center-row {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: auto;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .img-dev {
@@ -60,33 +71,33 @@
 }
 
 /* vidrios */
-.vidrios {
-    height: 88vh;
-}
+
 
 .protectorH {
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    -ms-flex-pack: end;
+    justify-content: end;
     color: white;
 
 
     >h2 {
 
         padding-top: 5%;
-        font-style: "Roboto", sans-serif;
+        font-family: $Concert-font;
         text-transform: uppercase;
-        text-shadow: 0px 5px 5px #969696;
+        text-shadow: 0px 5px 5px #000000;
         font-size: calc(1rem + 8vmin);
-        background: -webkit-linear-gradient(#4e4646, #000);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: #faf5f56e;
+
     }
 
     >h3 {
-        font-size: 3rem;
-        font-style: $font-family;
+        font-size: 2rem;
+        font-family: $Concert-font;
         padding-top: 9%;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: start;
         text-transform: uppercase;
     }
 
@@ -99,17 +110,17 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-top: 20%;
     width: auto;
     max-width: 550px;
     border: 5px solid linear-gradient(45deg, $base-color, red);
     -webkit-box-shadow: ($base-color) 0px 0px 20px 0px;
-            box-shadow: ($base-color) 0px 0px 20px 0px;
+    box-shadow: ($base-color) 0px 0px 20px 0px;
     border-radius: 2px;
 
     background-color: $Color-Fondo;
@@ -118,21 +129,15 @@
     padding: 2% 2%;
 
     >p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-style: $font-family;
         color: $text-dark;
-        
+
     }
 }
 
 /* /////////// fundas ///////////// */
-.fundas {
 
-
-    height: 95vh;
-
-
-}
 
 .section-fundas {
     padding-top: 5%;
@@ -141,34 +146,32 @@
 
 .fundasH {
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    -ms-flex-pack: end;
+    justify-content: end;
     color: white;
 
     >h2 {
         padding-top: 5%;
-        font-style: "Roboto", sans-serif;
+        font-family: $Concert-font;
         text-transform: uppercase;
-        text-shadow: 0px 5px 5px #969696;
+        text-shadow: 0px 5px 5px #000000;
         font-size: calc(1rem + 8vmin);
-        background: -webkit-linear-gradient(#4e4646, #000);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: #faf5f56e;
     }
 
     >h3 {
         font-size: 2rem;
-        font-style: $font-family;
+        font-family: $Concert-font;
         padding-top: 9%;
         -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: start;
+        -ms-flex-pack: start;
+        justify-content: start;
         text-transform: uppercase;
     }
 
     >p {
         font-size: 1.3rem;
-        font-style: $font-family;
+        font-family: $Concert-font;
         color: $Color-Fondo;
         margin-top: 20%;
         padding: 4% 0 4% 2%;
@@ -183,37 +186,33 @@
 
 .accesorios {
     margin-bottom: 10%;
-    height: 95vh;
-
 
 }
 
 .accesoriosH {
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    -ms-flex-pack: end;
+    justify-content: end;
 
     color: white;
 
 
     >h2 {
         padding-top: 5%;
-        font-style: "Roboto", sans-serif;
+        font-family: $Concert-font;
         text-transform: uppercase;
-        text-shadow: 0px 5px 5px #969696;
+        text-shadow: 0px 5px 5px #000000;
         font-size: calc(1rem + 8vmin);
-        background: -webkit-linear-gradient(#4e4646, #000);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: #faf5f56e;
     }
 
     >h3 {
         font-size: 2rem;
-        font-style: $font-family;
+        font-family: $Concert-font;
         padding-top: 9%;
         -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: start;
+        -ms-flex-pack: start;
+        justify-content: start;
         text-transform: uppercase;
     }
 
@@ -237,8 +236,8 @@
 .fadeTop {
     opacity: 0;
     -webkit-transform: translate(0, 10vh);
-        -ms-transform: translate(0, 10vh);
-            transform: translate(0, 10vh);
+    -ms-transform: translate(0, 10vh);
+    transform: translate(0, 10vh);
     -webkit-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
@@ -247,8 +246,8 @@
 .fadeRight {
     opacity: 0;
     -webkit-transform: translate(10vh, 0vh);
-        -ms-transform: translate(10vh, 0vh);
-            transform: translate(10vh, 0vh);
+    -ms-transform: translate(10vh, 0vh);
+    transform: translate(10vh, 0vh);
     -webkit-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
@@ -257,8 +256,8 @@
 .fadeLeft {
     opacity: 0;
     -webkit-transform: translate(-10vh, 0vh);
-        -ms-transform: translate(-10vh, 0vh);
-            transform: translate(-10vh, 0vh);
+    -ms-transform: translate(-10vh, 0vh);
+    transform: translate(-10vh, 0vh);
     -webkit-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
@@ -267,8 +266,8 @@
 .visible {
     opacity: 1;
     -webkit-transform: translate(0, 0);
-        -ms-transform: translate(0, 0);
-            transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
 }
 
 
@@ -280,12 +279,12 @@
     font-size: 16px;
     -webkit-transform: translate(0);
     -ms-transform: translate(0);
-        transform: translate(0);
+    transform: translate(0);
     background-image: -o-linear-gradient(45deg, $base-color, red);
     background-image: linear-gradient(45deg, $base-color, red);
     padding: 0.7em 2em;
     -webkit-box-shadow: 1px 1px 10px ($Degrade-fondo);
-            box-shadow: 1px 1px 10px ($Degrade-fondo);
+    box-shadow: 1px 1px 10px ($Degrade-fondo);
     -webkit-transition: box-shadow 0.25s;
     -webkit-transition: -webkit-box-shadow 0.25s;
     transition: -webkit-box-shadow 0.25s;
@@ -321,7 +320,7 @@
     background-image: -o-linear-gradient(135deg, $base-color, red);
     background-image: linear-gradient(-45deg, $base-color, red);
     -webkit-box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
-            box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+    box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
 }
 
 .bn30:hover .text {
