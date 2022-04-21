@@ -1,4 +1,3 @@
-
 .categorias {
     padding-top: 123px;
     color: white;
@@ -6,7 +5,7 @@
 
 
 
-.text-style{
+.text-style {
     color: $text-dark;
     font-size: 1.2rem;
 }
@@ -24,6 +23,10 @@ b {
     height: 5px;
     color: #a8bb1e;
 
+}
+.t12b-c{
+    display: flex;
+    flex-direction: column;
 }
 
 /* Titulo */
@@ -131,12 +134,12 @@ b {
     margin-top: 24px;
     border-width: 4px;
     border-style: solid;
-    
+
     -o-border-image: -o-linear-gradient(left, ($Color-Fondo) 0%, ($base-color) 50%, ($Color-Fondo) 100%) 1;
-    
-       border-image: -webkit-gradient(linear, left top, right top, from(($Color-Fondo)), color-stop(50%, ($base-color)), to(($Color-Fondo))) 1;
-    
-       border-image: linear-gradient(90deg, ($Color-Fondo) 0%, ($base-color) 50%, ($Color-Fondo) 100%) 1;
+
+    border-image: -webkit-gradient(linear, left top, right top, from(($Color-Fondo)), color-stop(50%, ($base-color)), to(($Color-Fondo))) 1;
+
+    border-image: linear-gradient(90deg, ($Color-Fondo) 0%, ($base-color) 50%, ($Color-Fondo) 100%) 1;
     padding-top: 16px;
     border-left: none;
     border-right: none;
@@ -146,6 +149,7 @@ b {
     .margtop {
         margin-top: 16px
     }
+
     .padbott {
         padding-bottom: 16px
     }
@@ -164,7 +168,7 @@ b {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     border-width: 4px;
-   
+
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -485,14 +489,14 @@ b {
     padding-top: 144.357%;
     border: solid $colores-fondo-general;
     border-width: 1px;
-/* color borde cartas */
+    /* color borde cartas */
     border: 5px solid black;
-    
-    -o-border-image: -o-linear-gradient(bottom, transparent,transparent, $base-color) 1;
-    
-       border-image: -webkit-gradient(linear, left bottom, left top, from(transparent),color-stop(transparent), to($base-color)) 1;
-    
-       border-image: linear-gradient(0deg, transparent,transparent, $base-color) 1;
+
+    -o-border-image: -o-linear-gradient(bottom, transparent, transparent, $base-color) 1;
+
+    border-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(transparent), to($base-color)) 1;
+
+    border-image: linear-gradient(0deg, transparent, transparent, $base-color) 1;
 
 }
 
@@ -508,7 +512,7 @@ b {
 
 
 .t12a {
-    height: auto;
+   
     width: 101%;
 
     -webkit-box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
@@ -569,7 +573,10 @@ b {
 .content-img-tienda-txt {
     position: relative;
 }
-
+.t12c-c-style2{
+    font-family: $Concert-font;
+    text-transform: uppercase;
+}
 
 /* Texto */
 .content-img-tienda-txt strong {
@@ -658,7 +665,7 @@ b {
 .img-nuevo-portada2 {
     width: 100%;
     -webkit-box-shadow: -12px 9px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-            box-shadow: -12px 9px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    box-shadow: -12px 9px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
 @media (max-width: 991px) {
@@ -729,19 +736,20 @@ img {
     left: 0;
     height: auto;
     width: 101%;
-    
+
     -webkit-transition: all .2s;
-    
+
     -o-transition: all .2s;
-    
+
     transition: all .2s;
+
     &:hover {
         -webkit-transition: all .2s;
         -o-transition: all .2s;
         transition: all .2s;
         -webkit-transform: scale(1.05);
-            -ms-transform: scale(1.05);
-                transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
     }
 }
 

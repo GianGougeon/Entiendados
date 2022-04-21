@@ -1,6 +1,6 @@
 /* logo wp */
 .logo-wp {
-
+    z-index: 999;
     border-radius: 50%;
     position: fixed;
     bottom: 3rem;
@@ -13,50 +13,30 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 
-    @media (max-width: 600px){
+    @media (max-width: 600px) {
         bottom: 3rem;
         right: 2rem;
     }
 
 }
-
-.logo-wp-img {
+.logo-instagram-fl{
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    background-color: $base-color-wp;
-    -webkit-transition: all 0.2s;
-    -o-transition: all 0.2s;
     transition: all 0.2s;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-
     &:hover {
-        border-radius: 50%;
+        transition: all 0.2s;
         -webkit-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-                transform: scale(1.1);
-        -webkit-box-shadow: 0 0 15px $base-color-wp;
-                box-shadow: 0 0 15px $base-color-wp;
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
         
-        
+
+
 
     }
-}
-
-.logo-wp-color {
-    fill: $base-color-wp;
 }

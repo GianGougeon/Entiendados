@@ -19,6 +19,14 @@ body {
   background-image: linear-gradient(20deg, $base-color 0%, #181818 46%,#181818 46%, $Color-Fondo 100%);
   
 }
+@media screen and (max-width: 768px) {
+  body {
+    background-image: none
+  }
+}
+  
+
+
 header {
 
   //sombreado

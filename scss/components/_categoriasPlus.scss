@@ -24,7 +24,7 @@
     background: $Degrade-fondo;
 
 
-    border: 10px solid;
+    border: 6px solid;
     border-image-outset: 0;
     border-image-repeat: stretch;
     border-image-slice: 100%;
@@ -326,4 +326,14 @@
 .bn30:hover .text {
     background-image: -o-linear-gradient(135deg, $base-color, red);
     background-image: linear-gradient(-45deg, $base-color, red);
+}
+
+.order-colum-fundas {
+    @media screen and (max-width: 768px) {
+        order: -1;
+    }
+}
+
+.col-sm-12{
+    padding: 7% 0;
 }
