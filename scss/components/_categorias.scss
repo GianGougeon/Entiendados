@@ -1,3 +1,4 @@
+
 .categorias {
     padding-top: 123px;
     color: white;
@@ -12,6 +13,8 @@
 
 .style-h3 {
     color: $text-dark;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -129,7 +132,11 @@ b {
     border-width: 4px;
     border-style: solid;
     
-    border-image: linear-gradient(90deg, ($Color-Fondo) 0%, ($base-color) 50%, ($Color-Fondo) 100%) 1;
+    -o-border-image: -o-linear-gradient(left, ($Color-Fondo) 0%, ($base-color) 50%, ($Color-Fondo) 100%) 1;
+    
+       border-image: -webkit-gradient(linear, left top, right top, from(($Color-Fondo)), color-stop(50%, ($base-color)), to(($Color-Fondo))) 1;
+    
+       border-image: linear-gradient(90deg, ($Color-Fondo) 0%, ($base-color) 50%, ($Color-Fondo) 100%) 1;
     padding-top: 16px;
     border-left: none;
     border-right: none;
@@ -481,7 +488,11 @@ b {
 /* color borde cartas */
     border: 5px solid black;
     
-    border-image: linear-gradient(0deg, transparent,transparent, $base-color) 1;
+    -o-border-image: -o-linear-gradient(bottom, transparent,transparent, $base-color) 1;
+    
+       border-image: -webkit-gradient(linear, left bottom, left top, from(transparent),color-stop(transparent), to($base-color)) 1;
+    
+       border-image: linear-gradient(0deg, transparent,transparent, $base-color) 1;
 
 }
 
@@ -646,7 +657,8 @@ b {
 
 .img-nuevo-portada2 {
     width: 100%;
-    box-shadow: -12px 9px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    -webkit-box-shadow: -12px 9px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+            box-shadow: -12px 9px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
 @media (max-width: 991px) {
@@ -718,10 +730,18 @@ img {
     height: auto;
     width: 101%;
     
+    -webkit-transition: all .2s;
+    
+    -o-transition: all .2s;
+    
     transition: all .2s;
     &:hover {
+        -webkit-transition: all .2s;
+        -o-transition: all .2s;
         transition: all .2s;
-        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+                transform: scale(1.05);
     }
 }
 

@@ -5,11 +5,19 @@
     position: fixed;
     bottom: 3rem;
     right: 3rem;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
     font-size: 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     @media (max-width: 600px){
         bottom: 3rem;
@@ -23,15 +31,26 @@
     height: 50px;
     border-radius: 50%;
     background-color: $base-color-wp;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
     transition: all 0.2s;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     &:hover {
         border-radius: 50%;
-        transform: scale(1.1);
-        box-shadow: 0 0 15px $base-color-wp;
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+        -webkit-box-shadow: 0 0 15px $base-color-wp;
+                box-shadow: 0 0 15px $base-color-wp;
         
         
 

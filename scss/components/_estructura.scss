@@ -1,3 +1,5 @@
+/* estructura */
+
 .datos-section {
     padding: 5% 0;
 }
@@ -9,10 +11,15 @@
 .img-datos {
     --angle: 0deg;
     border: 5px solid;
-    border-image: linear-gradient(var(--angle), $base-color, red) 1;
+    -o-border-image: -o-linear-gradient(var(--angle), $base-color, red) 1;
+       border-image: -webkit-gradient(linear, left top, left bottom, from(var(--angle)), color-stop($base-color), to(red)) 1;
+       border-image: linear-gradient(var(--angle), $base-color, red) 1;
 
 
-    animation: 10s rotate linear infinite;
+    -webkit-animation: 10s rotate linear infinite;
+
+
+            animation: 10s rotate linear infinite;
 }
 
 
@@ -25,15 +32,22 @@
     border-left: none;
     border-right: none;
     border-top: none;
-    border-image: linear-gradient(90deg, #151515 0%, $base-color 50%, #151515 100%) 1;
+    -o-border-image: -o-linear-gradient(left, #151515 0%, $base-color 50%, #151515 100%) 1;
+       border-image: -webkit-gradient(linear, left top, right top, from(#151515), color-stop(50%, $base-color), to(#151515)) 1;
+       border-image: linear-gradient(90deg, #151515 0%, $base-color 50%, #151515 100%) 1;
     padding: 5% 0;
 }
 
 
 
 .row-datos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     color: $text-dark;
     padding: 5% 0;
 
@@ -42,7 +56,9 @@
     border-left: none;
     border-right: none;
     border-top: none;
-    border-image: linear-gradient(90deg, #151515 0%, $base-color 50%, #151515 100%) 1;
+    -o-border-image: -o-linear-gradient(left, #151515 0%, $base-color 50%, #151515 100%) 1;
+       border-image: -webkit-gradient(linear, left top, right top, from(#151515), color-stop(50%, $base-color), to(#151515)) 1;
+       border-image: linear-gradient(90deg, #151515 0%, $base-color 50%, #151515 100%) 1;
 }
 
 
@@ -55,7 +71,9 @@
     border-left: none;
     border-right: none;
     border-top: none;
-    border-image: linear-gradient(90deg, #151515 0%, $base-color 50%, #151515 100%) 1;
+    -o-border-image: -o-linear-gradient(left, #151515 0%, $base-color 50%, #151515 100%) 1;
+       border-image: -webkit-gradient(linear, left top, right top, from(#151515), color-stop(50%, $base-color), to(#151515)) 1;
+       border-image: linear-gradient(90deg, #151515 0%, $base-color 50%, #151515 100%) 1;
 }
 
 
@@ -67,9 +85,13 @@
     height: 24px;
     width: 24px;
 
-    animation: morph 8s ease-in-out infinite;
+    -webkit-animation: morph 8s ease-in-out infinite;
+
+            animation: morph 8s ease-in-out infinite;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     background: red;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; 
     z-index: 5;
 }
@@ -91,7 +113,7 @@
     outline: none;
     position: relative;
     -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -100,7 +122,7 @@
     position: absolute;
     z-index: -1;
     -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -167,8 +189,12 @@
 
 @media (max-width: 768px) {
     .img-datos {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin: auto;
     }
 
@@ -178,7 +204,13 @@
 
     .datos-center {
 
+        display: -webkit-box;
+
+        display: -ms-flexbox;
+
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 }

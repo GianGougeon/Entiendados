@@ -1,9 +1,13 @@
-//categoria H
 
 
+/* devoluciones */
 #categorias-h {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-transform: uppercase;
     margin: 0;
     font-size: 25px;
@@ -88,9 +92,13 @@
         }
 
         &::before {
-            flex-grow: 1;
+            -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                    flex-grow: 1;
             height: 2px;
             content: '\a0';
+            background: -webkit-gradient(linear, left top, right top, from(($Color-Fondo)), to(($base-color)));
+            background: -o-linear-gradient(left, ($Color-Fondo) 0%, ($base-color) 100%);
             background: linear-gradient(90deg, ($Color-Fondo) 0%, ($base-color) 100%);
             position: relative;
             top: calc($font-size-categoria-h / 2);
@@ -98,9 +106,12 @@
         }
 
         &::after {
-            flex-grow: 1;
+            -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                    flex-grow: 1;
             height: 2px;
             content: '\a0';
+            background: -o-linear-gradient(170deg, ($Color-Fondo) 0%, ($base-color) 100%);
             background: linear-gradient(280deg, ($Color-Fondo) 0%, ($base-color) 100%);
             position: relative;
             top: calc($font-size-categoria-h / 2);
