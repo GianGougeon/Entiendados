@@ -69,6 +69,7 @@ a {
   width: 1170px;
   position: relative;
   display: flex;
+  background-color: transparent;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -407,6 +408,9 @@ footer {
   -webkit-box-shadow: 0px 11px 14px -4px #6e6c6c;
   box-shadow: 1px 3px 7px 3px #0f0f0f;
 }
+footer > div {
+  padding: 5%;
+}
 
 .wrapper {
   display: flex;
@@ -667,7 +671,7 @@ footer {
   }
 
   .d-block {
-    margin: auto;
+    margin: 0 20px;
   }
 
   .wrapper {
@@ -903,11 +907,10 @@ b {
   text-decoration: none;
   outline: 0;
   padding: 12px;
-  background-color: #efeff0;
+  background-color: transparent;
   border-color: transparent;
   display: block;
-  border-radius: 10px;
-  border: solid rgba(13, 6, 48, 0.15);
+  border: solid #d0d4db;
   border-width: 1px 1px;
 }
 .tap-m-sec:active {
@@ -954,7 +957,6 @@ b {
   margin-bottom: 0;
   margin-top: 0;
   font-weight: 700;
-  color: #1a1a1a;
 }
 
 .tap-m-padding-one {
@@ -976,7 +978,11 @@ b {
 
 .u-font-tw {
   font-weight: 700;
-  color: #1a1a1a;
+  color: #d0d4db;
+}
+.u-font-tw:active {
+  transition: all 0.1;
+  color: #1c1b1b;
 }
 
 /* Div Tienda */
@@ -1667,6 +1673,7 @@ img {
   background-image: -o-linear-gradient(45deg, #f00c0c, red);
   background-image: linear-gradient(45deg, #f00c0c, red);
   padding: 0.7em 2em;
+  margin: 1em 0;
   -webkit-box-shadow: 1px 1px 10px rgba(240, 12, 12, 0.3);
   box-shadow: 1px 1px 10px rgba(240, 12, 12, 0.3);
   -webkit-transition: box-shadow 0.25s;
@@ -1675,6 +1682,7 @@ img {
   -o-transition: box-shadow 0.25s;
   transition: box-shadow 0.25s;
   transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
+  width: 128px;
 }
 
 .bn30 .text {
@@ -1882,6 +1890,11 @@ img {
   border: 1px solid #d0d4db;
 }
 
+@media (max-width: 768px) {
+  .instagram-wrapper {
+    margin: 24px auto;
+  }
+}
 .btn-4 {
   color: #fff;
 }

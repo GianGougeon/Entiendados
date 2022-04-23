@@ -81,7 +81,12 @@
     max-width: 165px;
     margin: 24px 0;
     border: 1px solid $text-dark;
+}
 
+@media (max-width: 768px) {
+    .instagram-wrapper {
+        margin: 24px auto;
+    }
 }
 .btn-4 {
     color: #fff;
