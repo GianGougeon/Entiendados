@@ -1,33 +1,135 @@
 @import "./variables";
-/* estructura */
 
+/* estructura */
 .datos-section {
     padding: 5% 0;
 }
+
+@media (min-width: 998px) {
+    .datos-section {
+        padding: 5% 0 10% 0;
+
+        div>.row {
+            border: 1px solid $Principal-color-sombra;
+            border-radius: 10px;
+            background-color: transparent;
+        }
+    }
+}
+
+.indice-estructuras {
+    color: $text-dark;
+    text-transform: uppercase;
+    font-size: .8rem;
+
+    >ul {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: $text-dark;
+
+        &:hover {
+            color: $base-color;
+        }
+    }
+
+    span {
+        padding: 0 5px;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+}
+
+
+
+
+
 
 .datos-col-txt {
     padding-left: 3%;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+    height: 450px;
+
+}
+/* flechas carrusel */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    fill: $text-dark;
+}
+
+/* Dropdown de lista de celulares */
+#dropdown-menu{
+    background-color: $Color-Fondo;
+    
+}
+.datos-modelos{
+    background-color: $Color-Fondo;
+}
+
+/* instagram logo en producto */
+
+.instagram-wrapper {
+    background-color: $Color-Fondo;
+    max-width: 165px;
+    margin: 24px 0;
+    border: 1px solid $text-dark;
+
+}
+.btn-4 {
+    color: #fff;
+}
+
+.btn-4:hover {
+    transition: all 0.2 ease-in-out;
+    opacity: 0.8;
+}
+
+.btn-4:active {
+    background: #686868;
+
+}
 
 
 
+.instagram-wrapper .fa-instagram {
+    color: #ffffff;
+    padding: 15px;
+    font-size: 1em;
+    background-color: $Color-Fondo;
+    
+
+}
+
+.instagram-wrapper span {
+    font-size: 1.1em;
+    color: #fff;
+    font-family: $Concert-font;
+    text-transform: uppercase;
+}
 
 .nombre-precio-datos {
     color: $text-dark;
     border-width: 1px;
-    border: 2px solid black;
+    border: 1px solid black;
     border-left: none;
     border-right: none;
     border-top: none;
     -o-border-image: -o-linear-gradient(left, #151515 0%, $base-color 50%, #151515 100%) 1;
     border-image: -webkit-gradient(linear, left top, right top, from(#151515), color-stop(50%, $base-color), to(#151515)) 1;
-    border-image: linear-gradient(90deg, #151515 0%, $base-color 50%, #151515 100%) 1;
-    padding: 5% 0;
+    border-image: linear-gradient(90deg, $base-color, transparent, transparent) 1;
+    padding: 3% 0;
 }
 
 
-
+/* estilos columnas  */
 .row-datos {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -40,13 +142,13 @@
     padding: 5% 0;
 
     border-width: 1px;
-    border: 2px solid black;
+    border: 1px solid black;
     border-left: none;
     border-right: none;
     border-top: none;
     -o-border-image: -o-linear-gradient(left, #151515 0%, $base-color 50%, #151515 100%) 1;
     border-image: -webkit-gradient(linear, left top, right top, from(#151515), color-stop(50%, $base-color), to(#151515)) 1;
-    border-image: linear-gradient(90deg, #151515 0%, $base-color 50%, #151515 100%) 1;
+    border-image: linear-gradient(90deg, $base-color, transparent 80%, transparent 100%) 1;
 }
 
 
@@ -55,127 +157,80 @@
     color: $text-dark;
 
     border-width: 1px;
-    border: 2px solid black;
+    border: 1px solid black;
     border-left: none;
     border-right: none;
     border-top: none;
     -o-border-image: -o-linear-gradient(left, #151515 0%, $base-color 50%, #151515 100%) 1;
     border-image: -webkit-gradient(linear, left top, right top, from(#151515), color-stop(50%, $base-color), to(#151515)) 1;
-    border-image: linear-gradient(90deg, #151515 0%, $base-color 50%, #151515 100%) 1;
+    border-image: linear-gradient(90deg, $base-color, transparent 80%, transparent 100%) 1;
+}
+
+/* Cambia linea mobile */
+@media (max-width: 767px) {
+
+    .colores-datos,
+    .row-datos,
+    .nombre-precio-datos {
+        border-image: linear-gradient(90deg, transparent 0%, $base-color 50%, transparent 100%) 1;
+    }
+}
+
+.carousel-item img {
+    border-radius: 30px;
 }
 
 
+.nombre-precio-datos {
+    font-family: $Concert-font;
+    text-transform: uppercase;
+
+    >h2 {
+        font-size: 2.5em;
+        font-weight: 700;
+        color: $text-dark;
+    }
+
+    >h3 {
+        font-size: 1.5em;
+
+        color: $text-dark;
+    }
+}
+
+.row-datos,
+.colores-datos,
+.datos-center {
+
+    >h3 {
+        font-size: 1em;
+        text-transform: uppercase;
+        color: $text-dark;
+    }
+
+    >button {
+        text-transform: uppercase;
+    }
+}
+/* colores de productos */
 .btn-variant-content {
     margin: 0 5px;
-
+    border: 1px solid rgb(77, 77, 77);
     display: inline-block;
-
     height: 24px;
     width: 24px;
-
-    -webkit-animation: morph 8s ease-in-out infinite;
-
-    animation: morph 8s ease-in-out infinite;
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    border-radius: 86% 14% 86% 14% / 14% 86% 14% 86%;
     background: red;
     -webkit-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     z-index: 5;
-}
-
-/* boton compra */
-.btn-compra {
-    border: none;
-    font-family: 'Lato';
-    font-size: inherit;
-    color: inherit;
-    background: none;
-    cursor: pointer;
-    padding: 25px 80px;
-    display: inline-block;
-    margin: 15px 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
-    outline: none;
-    position: relative;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.btn-compra:after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-/* Pseudo elements for icons */
-.btn-compra:before {
-    font-family: 'FontAwesome';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    position: relative;
-    -webkit-font-smoothing: antialiased;
-}
-.carousel-item img{
-    border-radius: 30px;
-}
-
-/* Icon separator */
-.btn-sep-compra {
-    padding: 20px 69px;
-}
-
-.btn-sep-compra:before {
-    background: rgba(0, 0, 0, 0.15);
+    &:hover {
+        border-radius: 50px;
+    }
 }
 
 
-
-/* Button 3 */
-.btn-4 {
-    background: $base-color-wp;
-    color: #fff;
-}
-
-.btn-4:hover {
-    opacity: 0.8;
-}
-
-.btn-4:active {
-    background: #686868;
-
-}
-
-.btn-4:before {
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    line-height: 3;
-    font-size: 140%;
-    width: 60px;
-}
-
-/* Icons */
-
-
-.icon-send:before {
-    content: "\f232";
-    ;
-}
-.datos-center {
-    font-family: $Concert-font;
-}
 
 /* Medias mobile */
 
@@ -198,7 +253,7 @@
 
         display: -webkit-box;
         display: -ms-flexbox;
-        
+
         display: flex;
         -webkit-box-pack: center;
         -ms-flex-pack: center;

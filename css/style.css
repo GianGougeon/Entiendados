@@ -1068,8 +1068,15 @@ b {
   text-decoration: none;
 }
 
+.tienda-effect {
+  transition: all 0.2 ease-in-out;
+}
 .tienda-effect:hover {
-  border-bottom: 2px solid #0d0630;
+  border-bottom: 2px solid #f00c0c;
+  transition: all 0.2 ease-in-out;
+}
+.tienda-effect:active {
+  color: white;
 }
 
 .t6a {
@@ -1161,11 +1168,11 @@ b {
   position: relative;
   overflow: hidden;
   height: 0;
-  padding-top: 144.357%;
+  padding-top: 130%;
   border: solid #ececec;
   border-width: 1px;
   /* color borde cartas */
-  border: 5px solid black;
+  border: 3px solid;
   -o-border-image: -o-linear-gradient(bottom, transparent, transparent, #f00c0c) 1;
   border-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(transparent), to(#f00c0c)) 1;
   border-image: linear-gradient(0deg, transparent, transparent, #f00c0c) 1;
@@ -1179,22 +1186,14 @@ b {
   height: 100%;
 }
 
+/* imagenes */
 .t12a {
-  width: 101%;
-  -webkit-box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  -o-transition: transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
+  width: 100%;
+  transition: all 0.2s;
 }
 .t12a:hover {
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
+  transition: all 0.2s;
+  filter: brightness(0.7);
 }
 
 .t12a-t {
@@ -1234,6 +1233,9 @@ b {
 .t12c-c-style2 {
   font-family: "Concert One", cursive;
   text-transform: uppercase;
+  font-size: 1.5em;
+  justify-content: center;
+  display: flex;
 }
 
 /* Texto */
@@ -1383,7 +1385,7 @@ img {
 }
 
 /* logo wp */
-.logo-wp {
+.logoFlotante {
   z-index: 999;
   border-radius: 50%;
   position: fixed;
@@ -1404,7 +1406,7 @@ img {
   align-items: center;
 }
 @media (max-width: 600px) {
-  .logo-wp {
+  .logoFlotante {
     bottom: 3rem;
     right: 2rem;
   }
@@ -1435,6 +1437,7 @@ img {
   margin-top: 6px;
   background: rgba(240, 12, 12, 0.3);
   border: 6px solid;
+  border-radius: 5px;
   border-image-outset: 0;
   border-image-repeat: stretch;
   border-image-slice: 100%;
@@ -1443,6 +1446,12 @@ img {
   -o-border-image: -o-linear-gradient(var(--angle), #f00c0c, red) 1;
   -webkit-animation: 10s rotate linear infinite;
   animation: 10s rotate linear infinite;
+}
+
+.text-decoration-none {
+  list-style: none;
+  text-decoration: none;
+  color: #d0d4db;
 }
 
 @media (max-width: 768px) {
@@ -1477,6 +1486,7 @@ img {
   -ms-flex-pack: end;
   justify-content: end;
   color: white;
+  padding: 0 5%;
 }
 .protectorH > h2 {
   padding-top: 5%;
@@ -1514,7 +1524,7 @@ img {
   box-shadow: #f00c0c 0px 0px 20px 0px;
   border-radius: 2px;
   background-color: #1c1b1b;
-  margin-bottom: 8%;
+  margin-bottom: 2%;
   padding: 2% 2%;
 }
 .div-descrip-devol > p {
@@ -1534,6 +1544,7 @@ img {
   -ms-flex-pack: end;
   justify-content: end;
   color: white;
+  padding: 0 5%;
 }
 .fundasH > h2 {
   padding-top: 5%;
@@ -1573,6 +1584,7 @@ img {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: end;
+  padding: 0 5%;
   color: white;
 }
 .accesoriosH > h2 {
@@ -1645,6 +1657,7 @@ img {
 /* Boton */
 .bn30 {
   border: 5em;
+  width: 128px;
   cursor: pointer;
   outline: none;
   font-size: 16px;
@@ -1662,7 +1675,6 @@ img {
   -o-transition: box-shadow 0.25s;
   transition: box-shadow 0.25s;
   transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
-  color: white;
 }
 
 .bn30 .text {
@@ -1805,23 +1817,112 @@ img {
   padding: 5% 0;
 }
 
+@media (min-width: 998px) {
+  .datos-section {
+    padding: 5% 0 10% 0;
+  }
+  .datos-section div > .row {
+    border: 1px solid rgba(240, 12, 12, 0.3);
+    border-radius: 10px;
+    background-color: transparent;
+  }
+}
+.indice-estructuras {
+  color: #d0d4db;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.indice-estructuras > ul {
+  list-style: none;
+  text-decoration: none;
+}
+.indice-estructuras a {
+  text-decoration: none;
+  color: #d0d4db;
+}
+.indice-estructuras a:hover {
+  color: #f00c0c;
+}
+.indice-estructuras span {
+  padding: 0 5px;
+}
+.indice-estructuras strong {
+  font-weight: bold;
+}
+
 .datos-col-txt {
   padding-left: 3%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  height: 450px;
+}
+
+/* flechas carrusel */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  fill: #d0d4db;
+}
+
+/* Dropdown de lista de celulares */
+#dropdown-menu {
+  background-color: #1c1b1b;
+}
+
+.datos-modelos {
+  background-color: #1c1b1b;
+}
+
+/* instagram logo en producto */
+.instagram-wrapper {
+  background-color: #1c1b1b;
+  max-width: 165px;
+  margin: 24px 0;
+  border: 1px solid #d0d4db;
+}
+
+.btn-4 {
+  color: #fff;
+}
+
+.btn-4:hover {
+  transition: all 0.2 ease-in-out;
+  opacity: 0.8;
+}
+
+.btn-4:active {
+  background: #686868;
+}
+
+.instagram-wrapper .fa-instagram {
+  color: #ffffff;
+  padding: 15px;
+  font-size: 1em;
+  background-color: #1c1b1b;
+}
+
+.instagram-wrapper span {
+  font-size: 1.1em;
+  color: #fff;
+  font-family: "Concert One", cursive;
+  text-transform: uppercase;
 }
 
 .nombre-precio-datos {
   color: #d0d4db;
   border-width: 1px;
-  border: 2px solid black;
+  border: 1px solid black;
   border-left: none;
   border-right: none;
   border-top: none;
   -o-border-image: -o-linear-gradient(left, #151515 0%, #f00c0c 50%, #151515 100%) 1;
   border-image: -webkit-gradient(linear, left top, right top, from(#151515), color-stop(50%, #f00c0c), to(#151515)) 1;
-  border-image: linear-gradient(90deg, #151515 0%, #f00c0c 50%, #151515 100%) 1;
-  padding: 5% 0;
+  border-image: linear-gradient(90deg, #f00c0c, transparent, transparent) 1;
+  padding: 3% 0;
 }
 
+/* estilos columnas  */
 .row-datos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1833,130 +1934,83 @@ img {
   color: #d0d4db;
   padding: 5% 0;
   border-width: 1px;
-  border: 2px solid black;
+  border: 1px solid black;
   border-left: none;
   border-right: none;
   border-top: none;
   -o-border-image: -o-linear-gradient(left, #151515 0%, #f00c0c 50%, #151515 100%) 1;
   border-image: -webkit-gradient(linear, left top, right top, from(#151515), color-stop(50%, #f00c0c), to(#151515)) 1;
-  border-image: linear-gradient(90deg, #151515 0%, #f00c0c 50%, #151515 100%) 1;
+  border-image: linear-gradient(90deg, #f00c0c, transparent 80%, transparent 100%) 1;
 }
 
 .colores-datos {
   padding: 5% 0;
   color: #d0d4db;
   border-width: 1px;
-  border: 2px solid black;
+  border: 1px solid black;
   border-left: none;
   border-right: none;
   border-top: none;
   -o-border-image: -o-linear-gradient(left, #151515 0%, #f00c0c 50%, #151515 100%) 1;
   border-image: -webkit-gradient(linear, left top, right top, from(#151515), color-stop(50%, #f00c0c), to(#151515)) 1;
-  border-image: linear-gradient(90deg, #151515 0%, #f00c0c 50%, #151515 100%) 1;
+  border-image: linear-gradient(90deg, #f00c0c, transparent 80%, transparent 100%) 1;
 }
 
+/* Cambia linea mobile */
+@media (max-width: 767px) {
+  .colores-datos,
+.row-datos,
+.nombre-precio-datos {
+    border-image: linear-gradient(90deg, transparent 0%, #f00c0c 50%, transparent 100%) 1;
+  }
+}
+.carousel-item img {
+  border-radius: 30px;
+}
+
+.nombre-precio-datos {
+  font-family: "Concert One", cursive;
+  text-transform: uppercase;
+}
+.nombre-precio-datos > h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #d0d4db;
+}
+.nombre-precio-datos > h3 {
+  font-size: 1.5em;
+  color: #d0d4db;
+}
+
+.row-datos > h3,
+.colores-datos > h3,
+.datos-center > h3 {
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #d0d4db;
+}
+.row-datos > button,
+.colores-datos > button,
+.datos-center > button {
+  text-transform: uppercase;
+}
+
+/* colores de productos */
 .btn-variant-content {
   margin: 0 5px;
+  border: 1px solid #4d4d4d;
   display: inline-block;
   height: 24px;
   width: 24px;
-  -webkit-animation: morph 8s ease-in-out infinite;
-  animation: morph 8s ease-in-out infinite;
-  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  border-radius: 86% 14% 86% 14%/14% 86% 14% 86%;
   background: red;
   -webkit-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   z-index: 5;
 }
-
-/* boton compra */
-.btn-compra {
-  border: none;
-  font-family: "Lato";
-  font-size: inherit;
-  color: inherit;
-  background: none;
-  cursor: pointer;
-  padding: 25px 80px;
-  display: inline-block;
-  margin: 15px 30px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
-  outline: none;
-  position: relative;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.btn-compra:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-/* Pseudo elements for icons */
-.btn-compra:before {
-  font-family: "FontAwesome";
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  position: relative;
-  -webkit-font-smoothing: antialiased;
-}
-
-.carousel-item img {
-  border-radius: 30px;
-}
-
-/* Icon separator */
-.btn-sep-compra {
-  padding: 20px 69px;
-}
-
-.btn-sep-compra:before {
-  background: rgba(0, 0, 0, 0.15);
-}
-
-/* Button 3 */
-.btn-4 {
-  background: #25d366;
-  color: #fff;
-}
-
-.btn-4:hover {
-  opacity: 0.8;
-}
-
-.btn-4:active {
-  background: #686868;
-}
-
-.btn-4:before {
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  line-height: 3;
-  font-size: 140%;
-  width: 60px;
-}
-
-/* Icons */
-.icon-send:before {
-  content: "\f232";
-}
-
-.datos-center {
-  font-family: "Concert One", cursive;
+.btn-variant-content:hover {
+  border-radius: 50px;
 }
 
 /* Medias mobile */

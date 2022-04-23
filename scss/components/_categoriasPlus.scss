@@ -25,6 +25,7 @@
 
 
     border: 6px solid;
+    border-radius: 5px;
     border-image-outset: 0;
     border-image-repeat: stretch;
     border-image-slice: 100%;
@@ -39,7 +40,11 @@
 
 
 }
-
+.text-decoration-none{
+    list-style: none;
+    text-decoration: none;
+    color: $text-dark;
+}
 @media (max-width: 768px) {
 
     .vidrios,
@@ -78,7 +83,7 @@
     -ms-flex-pack: end;
     justify-content: end;
     color: white;
-
+    padding: 0 5%;
 
     >h2 {
 
@@ -124,7 +129,7 @@
     border-radius: 2px;
 
     background-color: $Color-Fondo;
-    margin-bottom: 8%;
+    margin-bottom: 2%;
 
     padding: 2% 2%;
 
@@ -149,6 +154,7 @@
     -ms-flex-pack: end;
     justify-content: end;
     color: white;
+    padding: 0 5%;
 
     >h2 {
         padding-top: 5%;
@@ -193,7 +199,7 @@
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: end;
-
+    padding: 0 5%;
     color: white;
 
 
@@ -274,6 +280,7 @@
 /* Boton */
 .bn30 {
     border: 5em;
+    width: 128px;
     cursor: pointer;
     outline: none;
     font-size: 16px;
@@ -291,7 +298,7 @@
     -o-transition: box-shadow 0.25s;
     transition: box-shadow 0.25s;
     transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
-    color: white;
+
 
 }
 
