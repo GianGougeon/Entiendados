@@ -264,8 +264,9 @@ b {
 
 .u-font-tw {
     font-weight: 700;
-    color : $text-dark;
-    &:active{
+    color: $text-dark;
+
+    &:active {
         transition: all 0.1;
         color: $Color-Fondo;
     }
@@ -384,6 +385,7 @@ b {
         border-bottom: 2px solid $base-color;
         transition: all 0.2 ease-in-out;
     }
+
     &:active {
         color: white;
     }
@@ -394,7 +396,7 @@ b {
     font-weight: bold;
     font-size: 1em;
     letter-spacing: 0;
-    line-height: 1.25em;
+    line-height: 1.6em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin-bottom: 0;
@@ -488,6 +490,8 @@ b {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+
+    margin: 7% 0;
 }
 
 
@@ -496,16 +500,8 @@ b {
     overflow: hidden;
     height: 0;
     padding-top: 130%;
-    border: solid $colores-fondo-general;
-    border-width: 1px;
-    /* color borde cartas */
-    border: 3px solid;
-
-    -o-border-image: -o-linear-gradient(bottom, transparent, transparent, $base-color) 1;
-
-    border-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(transparent), to($base-color)) 1;
-
-    border-image: linear-gradient(0deg, transparent, transparent, $base-color) 1;
+    
+    
 
 }
 
@@ -522,7 +518,7 @@ b {
 /* imagenes */
 .t12a {
 
-    width: 100%;
+    width: 65%;
     transition: all 0.2s;
 
     &:hover {
@@ -532,6 +528,12 @@ b {
 
     }
 
+}
+
+.txt-imag-div div a {
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
 .t12a-t {
@@ -572,7 +574,7 @@ b {
 }
 
 .t12c-c-style2 {
-    font-family: $Concert-font;
+    font-family: $Sans-font;
     text-transform: uppercase;
     font-size: 1.5em;
     justify-content: center;

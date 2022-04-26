@@ -2,15 +2,25 @@
 /* Variables */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 body::-webkit-scrollbar {
   width: 0.7em;
 }
@@ -175,7 +185,7 @@ a {
   flex-direction: row;
   display: flex;
   padding-left: 0;
-  margin-bottom: 0;
+  margin-top: 8px;
   list-style: none;
 }
 @media (max-width: 768px) {
@@ -1089,7 +1099,7 @@ b {
   font-weight: bold;
   font-size: 1em;
   letter-spacing: 0;
-  line-height: 1.25em;
+  line-height: 1.6em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin-bottom: 0;
@@ -1168,6 +1178,7 @@ b {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin: 7% 0;
 }
 
 .t10a {
@@ -1175,13 +1186,6 @@ b {
   overflow: hidden;
   height: 0;
   padding-top: 130%;
-  border: solid #ececec;
-  border-width: 1px;
-  /* color borde cartas */
-  border: 3px solid;
-  -o-border-image: -o-linear-gradient(bottom, transparent, transparent, #f00c0c) 1;
-  border-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(transparent), to(#f00c0c)) 1;
-  border-image: linear-gradient(0deg, transparent, transparent, #f00c0c) 1;
 }
 
 .t11a {
@@ -1194,12 +1198,18 @@ b {
 
 /* imagenes */
 .t12a {
-  width: 100%;
+  width: 65%;
   transition: all 0.2s;
 }
 .t12a:hover {
   transition: all 0.2s;
   filter: brightness(0.7);
+}
+
+.txt-imag-div div a {
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }
 
 .t12a-t {
@@ -1237,7 +1247,7 @@ b {
 }
 
 .t12c-c-style2 {
-  font-family: "Concert One", cursive;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   font-size: 1.5em;
   justify-content: center;
@@ -1438,7 +1448,7 @@ img {
   height: 88vh;
   font-weight: bold;
   -webkit-box-shadow: inset 0px 0px 12px 3px #000000;
-  box-shadow: inset 0px 0px 12px 3px #000000;
+  box-shadow: 11px 17px 20px 13px #000000;
   border-radius: 2px;
   margin-top: 6px;
   background: rgba(240, 12, 12, 0.3);
@@ -1496,7 +1506,7 @@ img {
 }
 .protectorH > h2 {
   padding-top: 5%;
-  font-family: "Concert One", cursive;
+  font-family: "Bitter", serif;
   text-transform: uppercase;
   text-shadow: 0px 5px 5px #000000;
   font-size: calc(1rem + 8vmin);
@@ -1504,12 +1514,11 @@ img {
 }
 .protectorH > h3 {
   font-size: 2rem;
-  font-family: "Concert One", cursive;
+  font-family: "Ubuntu", sans-serif;
   padding-top: 9%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
-  text-transform: uppercase;
 }
 
 .div-descrip-devol {
@@ -1541,7 +1550,6 @@ img {
 
 /* /////////// fundas ///////////// */
 .section-fundas {
-  padding-top: 5%;
   margin: 5% 0;
 }
 
@@ -1551,10 +1559,11 @@ img {
   justify-content: end;
   color: white;
   padding: 0 5%;
+  height: 88vh;
 }
 .fundasH > h2 {
   padding-top: 5%;
-  font-family: "Concert One", cursive;
+  font-family: "Bitter", serif;
   text-transform: uppercase;
   text-shadow: 0px 5px 5px #000000;
   font-size: calc(1rem + 8vmin);
@@ -1562,16 +1571,15 @@ img {
 }
 .fundasH > h3 {
   font-size: 2rem;
-  font-family: "Concert One", cursive;
+  font-family: "Ubuntu", sans-serif;
   padding-top: 9%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
-  text-transform: uppercase;
 }
 .fundasH > p {
   font-size: 1.3rem;
-  font-family: "Concert One", cursive;
+  font-family: "Bitter", serif;
   color: #1c1b1b;
   margin-top: 20%;
   padding: 4% 0 4% 2%;
@@ -1595,7 +1603,7 @@ img {
 }
 .accesoriosH > h2 {
   padding-top: 5%;
-  font-family: "Concert One", cursive;
+  font-family: "Bitter", serif;
   text-transform: uppercase;
   text-shadow: 0px 5px 5px #000000;
   font-size: calc(1rem + 8vmin);
@@ -1603,12 +1611,11 @@ img {
 }
 .accesoriosH > h3 {
   font-size: 2rem;
-  font-family: "Concert One", cursive;
+  font-family: "Ubuntu", sans-serif;
   padding-top: 9%;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
-  text-transform: uppercase;
 }
 .accesoriosH > p {
   font-size: 1.3rem;
@@ -1721,10 +1728,6 @@ img {
   .order-colum-fundas {
     order: -1;
   }
-}
-
-.col-sm-12 {
-  padding: 7% 0;
 }
 
 /* devoluciones */
@@ -1867,6 +1870,10 @@ img {
   height: 450px;
 }
 
+.carousel-inner {
+  padding-top: 8%;
+}
+
 /* flechas carrusel */
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
@@ -1918,7 +1925,7 @@ img {
 .instagram-wrapper span {
   font-size: 1.1em;
   color: #fff;
-  font-family: "Concert One", cursive;
+  font-family: "Bitter", serif;
   text-transform: uppercase;
 }
 
@@ -1982,7 +1989,7 @@ img {
 }
 
 .nombre-precio-datos {
-  font-family: "Concert One", cursive;
+  font-family: "Bitter", serif;
   text-transform: uppercase;
 }
 .nombre-precio-datos > h2 {

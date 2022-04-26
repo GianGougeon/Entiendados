@@ -9,21 +9,13 @@
 .accesorios,
 .fundas {
 
-
     height: 88vh;
-
-
-
     font-weight: bold;
     -webkit-box-shadow: inset 0px 0px 12px 3px #000000;
-    box-shadow: inset 0px 0px 12px 3px #000000;
-
+    box-shadow: 11px 17px 20px 13px #000000;
     border-radius: 2px;
     margin-top: 6px;
-
-    background: $Degrade-fondo;
-
-
+    background: rgba(240, 12, 12, 0.3);
     border: 6px solid;
     border-radius: 5px;
     border-image-outset: 0;
@@ -31,11 +23,8 @@
     border-image-slice: 100%;
     border-image-source: none;
     border-image-width: 1;
-
-    -o-border-image: -o-linear-gradient(var(--angle), $base-color, $base-color2) 1;
-
+    -o-border-image: -o-linear-gradient(var(--angle), #f00c0c, red) 1;
     -webkit-animation: 10s rotate linear infinite;
-
     animation: 10s rotate linear infinite;
 
 
@@ -98,12 +87,12 @@
 
     >h3 {
         font-size: 2rem;
-        font-family: $Concert-font;
+        font-family: $Ubuntu-font;
         padding-top: 9%;
         -webkit-box-pack: start;
         -ms-flex-pack: start;
         justify-content: start;
-        text-transform: uppercase;
+       
     }
 
 
@@ -145,7 +134,7 @@
 
 
 .section-fundas {
-    padding-top: 5%;
+
     margin: 5% 0;
 }
 
@@ -155,6 +144,7 @@
     justify-content: end;
     color: white;
     padding: 0 5%;
+    height: 88vh;
 
     >h2 {
         padding-top: 5%;
@@ -167,12 +157,12 @@
 
     >h3 {
         font-size: 2rem;
-        font-family: $Concert-font;
+        font-family: $Ubuntu-font;
         padding-top: 9%;
         -webkit-box-pack: start;
         -ms-flex-pack: start;
         justify-content: start;
-        text-transform: uppercase;
+        
     }
 
     >p {
@@ -214,12 +204,12 @@
 
     >h3 {
         font-size: 2rem;
-        font-family: $Concert-font;
+        font-family: $Ubuntu-font;
         padding-top: 9%;
         -webkit-box-pack: start;
         -ms-flex-pack: start;
         justify-content: start;
-        text-transform: uppercase;
+        
     }
 
     >p {
@@ -342,6 +332,3 @@
     }
 }
 
-.col-sm-12{
-    padding: 7% 0;
-}
