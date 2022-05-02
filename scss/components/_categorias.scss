@@ -169,6 +169,8 @@ b {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     border-width: 4px;
+    overflow-x: hidden;
+    justify-content: center;
 
 }
 
@@ -519,6 +521,22 @@ b {
 .t12a {
 
     width: 65%;
+    transition: all 0.2s;
+
+    &:hover {
+        transition: all 0.2s;
+
+        filter: brightness(0.7);
+
+    }
+
+}
+.t12c-c{
+    text-align: center
+}
+.t12a-accesorios {
+
+    width: 100%;
     transition: all 0.2s;
 
     &:hover {

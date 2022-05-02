@@ -18,8 +18,31 @@
 
     >h2 {
 
-        border-left: 2px solid $base-color;
-        border-right: 2px solid $base-color;
+        border-left: 5px solid $base-color;
+        border-right: 5px solid $base-color;
+        padding: 0 10px
+    }
+}
+
+#categorias-h-plus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 25px;
+
+
+
+
+
+    >h2 {
+
+        border-left: 5px solid $base-color;
+        border-right: 5px solid $base-color;
         padding: 0 10px
     }
 }
@@ -56,6 +79,12 @@
     color: $text-dark;
     font-family: $Sans-font;
 }
+#categorias-h2-plus {
+    font-size: 35px;
+    font-weight: 600;
+    color: $text-dark;
+    font-family: $Sans-font;
+}
 
 /* mobile */
 @media (max-width: 600px) {
@@ -64,11 +93,6 @@
         padding: 8% 5%;
     }
 
-    .text-style {
-
-    
-
-    }
 
     #categorias-h {
         padding: 5%;
@@ -78,6 +102,17 @@
         margin: 0 0 40px 0;
     }
     #categorias-h2{
+        margin: 5% ;
+    }
+
+    #categorias-h-plus {
+        padding: 5%;
+    }
+
+    #categorias-h-plus {
+        margin: 0 0 40px 0;
+    }
+    #categorias-h2-plus{
         margin: 5% ;
     }
 
@@ -95,7 +130,7 @@
             -webkit-box-flex: 1;
                 -ms-flex-positive: 1;
                     flex-grow: 1;
-            height: 2px;
+            height: 5px;
             content: '\a0';
             background: -webkit-gradient(linear, left top, right top, from(($Color-Fondo)), to(($base-color)));
             background: -o-linear-gradient(left, ($Color-Fondo) 0%, ($base-color) 100%);
@@ -109,7 +144,38 @@
             -webkit-box-flex: 1;
                 -ms-flex-positive: 1;
                     flex-grow: 1;
-            height: 2px;
+            height: 5px;
+            content: '\a0';
+            background: -o-linear-gradient(170deg, ($Color-Fondo) 0%, ($base-color) 100%);
+            background: linear-gradient(280deg, ($Color-Fondo) 0%, ($base-color) 100%);
+            position: relative;
+            top: calc($font-size-categoria-h / 2);
+        }
+    }
+    #categorias-h-plus {
+        >h2 {
+            padding: 0 10px;
+        }
+
+        &::before {
+            -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                    flex-grow: 1;
+            height: 5px;
+            content: '\a0';
+            background: -webkit-gradient(linear, left top, right top, from(($Color-Fondo)), to(($base-color)));
+            background: -o-linear-gradient(left, ($Color-Fondo) 0%, ($base-color) 100%);
+            background: linear-gradient(90deg, ($Color-Fondo) 0%, ($base-color) 100%);
+            position: relative;
+            top: calc($font-size-categoria-h / 2);
+
+        }
+
+        &::after {
+            -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                    flex-grow: 1;
+            height: 5px;
             content: '\a0';
             background: -o-linear-gradient(170deg, ($Color-Fondo) 0%, ($base-color) 100%);
             background: linear-gradient(280deg, ($Color-Fondo) 0%, ($base-color) 100%);
