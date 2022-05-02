@@ -59,21 +59,41 @@
     height: 450px;
 
 }
-.carousel-inner{
+
+.carousel-inner {
     padding-top: 8%;
 }
+
 /* flechas carrusel */
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
     fill: $text-dark;
 }
 
-/* Dropdown de lista de celulares */
-#dropdown-menu{
-    background-color: $Color-Fondo;
-    
+.zoom-in-silicone {
+    position: absolute;
+    top: 90%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+
 }
-.datos-modelos{
+
+.zoom-in-silicone-icon {
+    font-size: 5em;
+    
+    color: white;
+    
+    
+
+}
+
+/* Dropdown de lista de celulares */
+#dropdown-menu {
+    background-color: $Color-Fondo;
+
+}
+
+.datos-modelos {
     background-color: $Color-Fondo;
 }
 
@@ -81,6 +101,7 @@
 
 .instagram-wrapper {
     background-color: $Color-Fondo;
+    
     max-width: 165px;
     margin: 24px 0;
     border: 1px solid $text-dark;
@@ -91,6 +112,7 @@
         margin: 24px auto;
     }
 }
+
 .btn-4 {
     color: #fff;
 }
@@ -108,14 +130,20 @@
 
 
 .instagram-wrapper .fa-instagram {
-    color: #ffffff;
+    color: $base-color-ig;
     padding: 15px;
     font-size: 1em;
     background-color: $Color-Fondo;
-    
+
 
 }
-
+.fa-arrow-left{
+    color: #ffffff;
+    padding: 15px;
+    font-size: 1em;
+    background-color: #1c1b1b;
+    
+}
 .instagram-wrapper span {
     font-size: 1.1em;
     color: #fff;
@@ -220,6 +248,7 @@
         text-transform: uppercase;
     }
 }
+
 /* colores de productos */
 .btn-variant-content {
     margin: 0 5px;
@@ -233,6 +262,7 @@
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     z-index: 5;
+
     &:hover {
         border-radius: 50px;
     }

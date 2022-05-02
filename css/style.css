@@ -1966,6 +1966,18 @@ img {
   fill: #d0d4db;
 }
 
+.zoom-in-silicone {
+  position: absolute;
+  top: 90%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.zoom-in-silicone-icon {
+  font-size: 5em;
+  color: white;
+}
+
 /* Dropdown de lista de celulares */
 #dropdown-menu {
   background-color: #1c1b1b;
@@ -2002,6 +2014,13 @@ img {
 }
 
 .instagram-wrapper .fa-instagram {
+  color: #e1306c;
+  padding: 15px;
+  font-size: 1em;
+  background-color: #1c1b1b;
+}
+
+.fa-arrow-left {
   color: #ffffff;
   padding: 15px;
   font-size: 1em;
