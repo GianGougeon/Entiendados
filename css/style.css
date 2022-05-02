@@ -1932,6 +1932,7 @@ img {
 .indice-estructuras > ul {
   list-style: none;
   text-decoration: none;
+  flex-wrap: wrap;
 }
 .indice-estructuras a {
   text-decoration: none;
@@ -1958,6 +1959,10 @@ img {
 
 .carousel-inner {
   padding-top: 8%;
+}
+.carousel-inner > div > img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* flechas carrusel */

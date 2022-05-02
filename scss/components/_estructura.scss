@@ -25,6 +25,7 @@
     >ul {
         list-style: none;
         text-decoration: none;
+        flex-wrap: wrap;
     }
 
     a {
@@ -62,6 +63,13 @@
 
 .carousel-inner {
     padding-top: 8%;
+
+    >div {
+        >img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
 }
 
 /* flechas carrusel */
@@ -80,10 +88,10 @@
 
 .zoom-in-silicone-icon {
     font-size: 5em;
-    
+
     color: white;
-    
-    
+
+
 
 }
 
@@ -101,7 +109,7 @@
 
 .instagram-wrapper {
     background-color: $Color-Fondo;
-    
+
     max-width: 165px;
     margin: 24px 0;
     border: 1px solid $text-dark;
@@ -137,13 +145,15 @@
 
 
 }
-.fa-arrow-left{
+
+.fa-arrow-left {
     color: #ffffff;
     padding: 15px;
     font-size: 1em;
     background-color: #1c1b1b;
-    
+
 }
+
 .instagram-wrapper span {
     font-size: 1.1em;
     color: #fff;
