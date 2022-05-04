@@ -22,6 +22,7 @@
     border-image-repeat: stretch;
     border-image-slice: 100%;
     border-image-source: none;
+    border-color: $base-color;
     border-image-width: 1;
     -o-border-image: -o-linear-gradient(var(--angle), #f00c0c, red) 1;
     -webkit-animation: 10s rotate linear infinite;
@@ -113,10 +114,8 @@
     align-items: center;
     margin-top: 20%;
     width: auto;
-    max-width: 550px;
-    border: 5px solid linear-gradient(45deg, $base-color, red);
-    -webkit-box-shadow: ($base-color) 0px 0px 20px 0px;
-    box-shadow: ($base-color) 0px 0px 20px 0px;
+    justify-content: center;
+    
     border-radius: 2px;
 
     background-color: $Color-Fondo;
@@ -294,17 +293,17 @@
 /* Boton */
 .bn30 {
     border: 5em;
-    width: 128px;
+    width: 130px;
     cursor: pointer;
     outline: none;
     font-size: 16px;
     -webkit-transform: translate(0);
     -ms-transform: translate(0);
     transform: translate(0);
-    background-image: -o-linear-gradient(45deg, $base-color, red);
-    background-image: linear-gradient(45deg, $base-color, red);
+    background-image: -o-linear-gradient(45deg, $base-color, orange);
+    background-image: linear-gradient(45deg, $base-color, orange);
     padding: 0.7em 2em;
-    margin: 1em 0;
+    margin: 2em 0 0 0;
     -webkit-box-shadow: 1px 1px 10px ($Degrade-fondo);
     box-shadow: 1px 1px 10px ($Degrade-fondo);
     -webkit-transition: box-shadow 0.25s;
@@ -314,7 +313,20 @@
     transition: box-shadow 0.25s;
     transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
     width: 128px;
-
+    >a{
+        text-transform: uppercase;
+        white-space: nowrap;
+        transition: all 0.2 ease-in-out;
+        &:hover{
+            transition: all 0.2 ease-in-out;
+            color: $base-color;
+            
+        }
+        
+    }
+    &:hover{
+        background-color: red;
+    }
 }
 
 .bn30 .text {
@@ -338,14 +350,16 @@
     background: #0e0e10;
 }
 
-.bn30:hover {
+.bn30:active {
     background-image: -o-linear-gradient(135deg, $base-color, red);
     background-image: linear-gradient(-45deg, $base-color, red);
     -webkit-box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
     box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+   
 }
 
 .bn30:hover .text {
     background-image: -o-linear-gradient(135deg, $base-color, red);
     background-image: linear-gradient(-45deg, $base-color, red);
+    text-transform: uppercase;
 }

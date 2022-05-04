@@ -59,6 +59,10 @@ body {
     background-image: none;
   }
 }
+ul {
+  padding-left: 0;
+}
+
 header {
   -webkit-box-shadow: 0px 11px 14px -4px #6e6c6c;
   box-shadow: 1px 3px 7px 3px #0f0f0f;
@@ -452,77 +456,77 @@ footer > div {
   border-radius: 50%;
   border: 5px solid #D8E2DC;
   float: left;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .wrapper ul li .fa {
   color: #D8E2DC;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 /*facebook*/
 .wrapper ul li:hover.facebook {
   border: 5px solid #3b5998;
   box-shadow: 0 0 15px #3b5998;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .wrapper ul li:hover .fa-facebook {
   color: #3b5998;
   text-shadow: 0 0 15px #3b5998;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 /*twitter*/
 .wrapper ul li:hover.twitter {
   border: 5px solid #00aced;
   box-shadow: 0 0 15px #00aced;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .wrapper ul li:hover .fa-twitter {
   color: #00aced;
   text-shadow: 0 0 15px #00aced;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 /* instagram */
 .wrapper ul li:hover.instagram {
   border: 5px solid #bc2a8d;
   box-shadow: 0 0 15px #bc2a8d;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .wrapper ul li:hover .fa-instagram {
   color: #bc2a8d;
   text-shadow: 0 0 15px #bc2a8d;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 /* google */
 .wrapper ul li:hover.google {
   border: 5px solid #dd4b39;
   box-shadow: 0 0 15px #dd4b39;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .wrapper ul li:hover .fa-google {
   color: #dd4b39;
   text-shadow: 0 0 15px #dd4b39;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 /* whatsapp */
 .wrapper ul li:hover.whatsapp {
   border: 5px solid #4dc247;
   box-shadow: 0 0 15px #4dc247;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .wrapper ul li:hover .fa-whatsapp {
   color: #4dc247;
   text-shadow: 0 0 15px #4dc247;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 /* youtube link */
@@ -1473,6 +1477,7 @@ img {
   border-image-repeat: stretch;
   border-image-slice: 100%;
   border-image-source: none;
+  border-color: #f00c0c;
   border-image-width: 1;
   -o-border-image: -o-linear-gradient(var(--angle), #f00c0c, red) 1;
   -webkit-animation: 10s rotate linear infinite;
@@ -1548,10 +1553,7 @@ img {
   align-items: center;
   margin-top: 20%;
   width: auto;
-  max-width: 550px;
-  border: 5px solid linear-gradient(45deg, #f00c0c, red);
-  -webkit-box-shadow: #f00c0c 0px 0px 20px 0px;
-  box-shadow: #f00c0c 0px 0px 20px 0px;
+  justify-content: center;
   border-radius: 2px;
   background-color: #1c1b1b;
   margin-bottom: 2%;
@@ -1699,17 +1701,17 @@ img {
 /* Boton */
 .bn30 {
   border: 5em;
-  width: 128px;
+  width: 130px;
   cursor: pointer;
   outline: none;
   font-size: 16px;
   -webkit-transform: translate(0);
   -ms-transform: translate(0);
   transform: translate(0);
-  background-image: -o-linear-gradient(45deg, #f00c0c, red);
-  background-image: linear-gradient(45deg, #f00c0c, red);
+  background-image: -o-linear-gradient(45deg, #f00c0c, orange);
+  background-image: linear-gradient(45deg, #f00c0c, orange);
   padding: 0.7em 2em;
-  margin: 1em 0;
+  margin: 2em 0 0 0;
   -webkit-box-shadow: 1px 1px 10px rgba(240, 12, 12, 0.3);
   box-shadow: 1px 1px 10px rgba(240, 12, 12, 0.3);
   -webkit-transition: box-shadow 0.25s;
@@ -1719,6 +1721,18 @@ img {
   transition: box-shadow 0.25s;
   transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
   width: 128px;
+}
+.bn30 > a {
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: all 0.2 ease-in-out;
+}
+.bn30 > a:hover {
+  transition: all 0.2 ease-in-out;
+  color: #f00c0c;
+}
+.bn30:hover {
+  background-color: red;
 }
 
 .bn30 .text {
@@ -1741,7 +1755,7 @@ img {
   background: #0e0e10;
 }
 
-.bn30:hover {
+.bn30:active {
   background-image: -o-linear-gradient(135deg, #f00c0c, red);
   background-image: linear-gradient(-45deg, #f00c0c, red);
   -webkit-box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
@@ -1751,6 +1765,7 @@ img {
 .bn30:hover .text {
   background-image: -o-linear-gradient(135deg, #f00c0c, red);
   background-image: linear-gradient(-45deg, #f00c0c, red);
+  text-transform: uppercase;
 }
 
 /* devoluciones */
