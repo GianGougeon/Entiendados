@@ -15,7 +15,7 @@
     box-shadow: 11px 17px 20px 13px #000000;
     border-radius: 2px;
     margin-top: 6px;
-    background: rgba(240, 12, 12, 0.3);
+    background: $navbar-body-color;
     border: 6px solid;
     border-radius: 5px;
     border-image-outset: 0;
@@ -24,6 +24,8 @@
     border-image-source: none;
     border-color: $base-color;
     border-image-width: 1;
+    border-top: none;
+    border-bottom: none;
     -o-border-image: -o-linear-gradient(var(--angle), #f00c0c, red) 1;
     -webkit-animation: 10s rotate linear infinite;
     animation: 10s rotate linear infinite;
@@ -118,7 +120,7 @@
     
     border-radius: 2px;
 
-    background-color: $Color-Fondo;
+    background-color: #25292c;
     margin-bottom: 2%;
 
     padding: 2% 2%;
@@ -295,7 +297,6 @@
     border: 5em;
     width: 130px;
     cursor: pointer;
-    outline: none;
     font-size: 16px;
     -webkit-transform: translate(0);
     -ms-transform: translate(0);
@@ -303,7 +304,7 @@
     background-image: -o-linear-gradient(45deg, $base-color, orange);
     background-image: linear-gradient(45deg, $base-color, orange);
     padding: 0.7em 2em;
-    margin: 2em 0 0 0;
+    margin: 4em 0 0 0;
     -webkit-box-shadow: 1px 1px 10px ($Degrade-fondo);
     box-shadow: 1px 1px 10px ($Degrade-fondo);
     -webkit-transition: box-shadow 0.25s;
@@ -313,19 +314,14 @@
     transition: box-shadow 0.25s;
     transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
     width: 128px;
-    >a{
+    >b{
+        color: $text-dark!important;
         text-transform: uppercase;
         white-space: nowrap;
         transition: all 0.2 ease-in-out;
-        &:hover{
-            transition: all 0.2 ease-in-out;
-            color: $base-color;
-            
+        &:active {
+            color: $base-color!important;
         }
-        
-    }
-    &:hover{
-        background-color: red;
     }
 }
 

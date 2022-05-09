@@ -45,32 +45,31 @@ window.addEventListener('mouseup', (event) => {
 function handleSmallScreens() {
   document.querySelector('.navbar-toggler')
     .addEventListener('click', () => {
-    let navbarMenu = document.querySelector('.navbar-menu')
+      let navbarMenu = document.querySelector('.navbar-menu')
 
-    if (navbarMenu.style.display === 'flex') {
-      navbarMenu.style.display = 'none'
-      return
-    }
+      if (navbarMenu.style.display === 'flex') {
+        navbarMenu.style.display = 'none'
+        return
+      }
 
-    navbarMenu.style.display = 'flex'
-  })
+      navbarMenu.style.display = 'flex'
+    })
 }
 
 handleSmallScreens();
 
-window.addEventListener('scroll', function()  {
+window.addEventListener('scroll', function () {
   let elements = document.getElementsByClassName('scroll-content');
   let screenSize = window.innerHeight;
-  
-        for(var i = 0; i < elements.length; i++) {
-        var element = elements[i];
 
-        if(element.getBoundingClientRect().top < screenSize) {
-          element.classList.add('visible');
-        } else {
-          element.classList.remove('visible');
-        }
+  for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
 
-      }
+    if (element.getBoundingClientRect().top < screenSize) {
+      element.classList.add('visible');
+    } else {
+      element.classList.remove('visible');
+    }
+
+  }
 });
-

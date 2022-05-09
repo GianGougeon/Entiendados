@@ -61,6 +61,9 @@
 
 }
 
+.carousel-item{
+    transition: transform .6s ease-in-out;
+}
 .carousel-inner {
     padding-top: 8%;
 
@@ -173,7 +176,17 @@
     border-image: linear-gradient(90deg, $base-color, transparent, transparent) 1;
     padding: 3% 0;
 }
-
+.nombre-precio-datos-2 {
+    color: $text-dark;
+    border-width: 1px;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-image: -webkit-gradient(linear, left top, right top, from(#151515), color-stop(50%, #f00c0c), to(#151515)) 1;
+    border-image: linear-gradient(90deg, #f00c0c, transparent 80%, transparent 100%) 1;
+    padding: 3% 0;
+}
 
 /* estilos columnas  */
 .row-datos {
@@ -217,9 +230,10 @@
 
     .colores-datos,
     .row-datos,
-    .nombre-precio-datos {
+    .nombre-precio-datos, .nombre-precio-datos-2 {
         border-image: linear-gradient(90deg, transparent 0%, $base-color 50%, transparent 100%) 1;
     }
+
 }
 
 .carousel-item img {
@@ -278,7 +292,9 @@
     }
 }
 
-
+.colum-img-datos{
+    margin: auto;
+}
 
 /* Medias mobile */
 

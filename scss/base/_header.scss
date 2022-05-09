@@ -16,8 +16,10 @@ body {
   font-family: $font-family;
   font-size: $font-size-base;
   background-color: $Color-Fondo;
-  background-image: linear-gradient(20deg, $base-color 0%, #181818 46%,#181818 46%, $Color-Fondo 100%);
-  
+  background-image: linear-gradient(20deg, #f00c0c 0%, #181818 46%, #181818 46%, #1c1b1b 100%);
+}
+.body-index{
+  background-image: linear-gradient(20deg, $base-color 0%, $Color-Fondo 30%, #272c30 100%);
 }
 @media screen and (max-width: 768px) {
   body {

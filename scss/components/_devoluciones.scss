@@ -132,9 +132,9 @@
                     flex-grow: 1;
             height: 5px;
             content: '\a0';
-            background: -webkit-gradient(linear, left top, right top, from(($Color-Fondo)), to(($base-color)));
-            background: -o-linear-gradient(left, ($Color-Fondo) 0%, ($base-color) 100%);
-            background: linear-gradient(90deg, ($Color-Fondo) 0%, ($base-color) 100%);
+            background: -webkit-gradient(linear, left top, right top, from((transparent)), to(($base-color)));
+            background: -o-linear-gradient(left, (transparent) 0%, ($base-color) 100%);
+            background: linear-gradient(90deg, (transparent) 0%, ($base-color) 100%);
             position: relative;
             top: calc($font-size-categoria-h / 2);
 
@@ -146,8 +146,8 @@
                     flex-grow: 1;
             height: 5px;
             content: '\a0';
-            background: -o-linear-gradient(170deg, ($Color-Fondo) 0%, ($base-color) 100%);
-            background: linear-gradient(280deg, ($Color-Fondo) 0%, ($base-color) 100%);
+            background: -o-linear-gradient(170deg, (transparent) 0%, ($base-color) 100%);
+            background: linear-gradient(280deg, (transparent) 0%, ($base-color) 100%);
             position: relative;
             top: calc($font-size-categoria-h / 2);
         }
@@ -163,9 +163,9 @@
                     flex-grow: 1;
             height: 5px;
             content: '\a0';
-            background: -webkit-gradient(linear, left top, right top, from(($Color-Fondo)), to(($base-color)));
-            background: -o-linear-gradient(left, ($Color-Fondo) 0%, ($base-color) 100%);
-            background: linear-gradient(90deg, ($Color-Fondo) 0%, ($base-color) 100%);
+            background: -webkit-gradient(linear, left top, right top, from((transparent)), to(($base-color)));
+            background: -o-linear-gradient(left, (transparent) 0%, ($base-color) 100%);
+            background: linear-gradient(90deg, (transparent) 0%, ($base-color) 100%);
             position: relative;
             top: calc($font-size-categoria-h / 2);
 
@@ -177,8 +177,8 @@
                     flex-grow: 1;
             height: 5px;
             content: '\a0';
-            background: -o-linear-gradient(170deg, ($Color-Fondo) 0%, ($base-color) 100%);
-            background: linear-gradient(280deg, ($Color-Fondo) 0%, ($base-color) 100%);
+            background: -o-linear-gradient(170deg, (transparent) 0%, ($base-color) 100%);
+            background: linear-gradient(280deg, (transparent) 0%, ($base-color) 100%);
             position: relative;
             top: calc($font-size-categoria-h / 2);
         }
